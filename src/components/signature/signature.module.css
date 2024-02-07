@@ -1,0 +1,4 @@
+.signature {
+    position: relative;
+    text-shadow: -1px 4px hsl(var(--accent));
+}

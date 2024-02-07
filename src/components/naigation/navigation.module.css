@@ -1,0 +1,7 @@
+.background {
+    /*background: hsl(45deg 17% 95% / 50%);*/
+    background: hsl(var(--background) / 50%);
+    backdrop-filter: blur(20px) saturate(1.7);
+    /*background: hsla(var(--background), 0.8);*/
+    /*backdrop-filter: blur(10px) saturate(1);*/
+}
