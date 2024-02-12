@@ -7,16 +7,17 @@ const pacifico = Pacifico({
     subsets: ['latin'],
 })
 
-export default function Signature() {
+export default function Signature({className}: {className?: string}) {
     return (
-        <div className={cn(
+        <h1 className={cn(
             pacifico.className,
             "text-8xl text-primary leading-none",
             "sm:text-[10rem]",
-            styles.signature
+            styles.signature,
+            className
         )}>
             <span>Piotr</span><br/>
             <span className={"pl-2 sm:pl-4"}>Żurek</span>
-        </div>
+        </h1>
     )
 }

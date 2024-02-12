@@ -1,8 +1,7 @@
 "use client";
 
-import styles from "./bento-grid-carousel.module.css";
 import {cn} from "@/lib/utils";
-import {Carousel, CarouselContent, CarouselItem} from "@/components/ui/carousel";
+import {Carousel, CarouselContent, CarouselItem} from "@/components/ui/carousel/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import {DrawerPopover} from "@/components/ui/drawer-popover";
 import {TranslationsContextProps, useTranslations} from "@/contexts/translations-context";
@@ -35,7 +34,7 @@ export default function BentoGridCarousel({title, carouselData}: { title: string
                 ]}
                 className={"w-full"}
             >
-                <CarouselContent className={cn(styles.carousel, "w-full", carouselBasis)}>
+                <CarouselContent className={cn("w-full", carouselBasis)}>
                     {
                         carouselData.map((item: CarouselElement, index: number) => (
                             <CarouselItem key={index}>

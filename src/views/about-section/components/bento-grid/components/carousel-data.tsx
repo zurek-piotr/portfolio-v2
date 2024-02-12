@@ -21,7 +21,7 @@ import {
     IconBrandTailwind, IconBrandTwilio,
     IconBrandTypescript,
     IconBrandVite,
-    IconBrandVue,
+    IconBrandVue, IconBrandWordpress,
     IconSql
 } from "@tabler/icons-react";
 import {JSX} from "react";
@@ -99,6 +99,11 @@ export const FrontendData: CarouselElement[] = [
         title: "Storybook",
         icon: IconBrandStorybook,
         iconClasses: "text-[#FF4785]",
+    },
+    {
+        title: "WordPress",
+        icon: IconBrandWordpress,
+        iconClasses: "text-[#00749C]",
     },
     {
         title: "Oauth",

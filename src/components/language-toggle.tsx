@@ -1,13 +1,14 @@
 "use client"
 
 import * as React from "react"
-import {useTranslations} from "@/contexts/translations-context";
+import {TranslationsContextProps, useTranslations} from "@/contexts/translations-context";
 import {i18n} from "@/i18n.config";
 import {usePathname, useRouter} from "next/navigation";
 import {LangSwitch} from "@/components/ui/lang-switch";
 
 
 export function LanguageToggle() {
+    const {translations: t}: TranslationsContextProps = useTranslations();
     const {push} = useRouter();
     const {currentLanguage} = useTranslations()
     const languages = i18n.locales;
@@ -23,6 +24,7 @@ export function LanguageToggle() {
 
     return (
         <LangSwitch
+            title={t.Toggle_language}
             checked={currentLanguage === "pl"}
             onCheckedChange={() => push(redirectedPathName(otherLanguage))}
         />

@@ -4,6 +4,8 @@ import type {Locale} from "@/i18n.config";
 import {Translations} from "@/contexts/translations-context";
 import AboutSection from "@/views/about-section/about-section";
 import Navigation from "@/components/naigation/navigation";
+import ProjectsSection from "@/views/projects-section/projects-section";
+import FooterSection from "@/views/footer-section/footer-section";
 
 export default async function Home({params: {lang}}: { params: { lang: Locale } }) {
     const translations: Translations = await getTranslations(lang);
@@ -11,9 +13,11 @@ export default async function Home({params: {lang}}: { params: { lang: Locale } 
     return (
         <>
             <Navigation translations={translations} currentLanguage={lang}/>
-            <main>
+            <main className={"flex flex-col gap-24"}>
                 <HeroSection translations={translations} currentLanguage={lang}/>
                 <AboutSection translations={translations} currentLanguage={lang}/>
+                <ProjectsSection translations={translations} currentLanguage={lang}/>
+                <FooterSection translations={translations} currentLanguage={lang}/>
             </main>
         </>
     );

@@ -13,6 +13,7 @@ import React from "react";
 import {Popover, PopoverContent, PopoverTrigger} from "@/components/ui/popover";
 import {cn} from "@/lib/utils";
 import {useIsDesktop} from "@/contexts/is-desktop-context";
+import {TranslationsContextProps, useTranslations} from "@/contexts/translations-context";
 
 
 export function DrawerPopover({title, description, body, children}: {
@@ -22,6 +23,7 @@ export function DrawerPopover({title, description, body, children}: {
     description?: string,
 }) {
     const isDesktop = useIsDesktop()
+    const {translations: t}: TranslationsContextProps = useTranslations();
     const [open, setOpen] = React.useState(false)
 
     return (
@@ -37,7 +39,9 @@ export function DrawerPopover({title, description, body, children}: {
             ) : (
                 <Drawer open={open} onOpenChange={setOpen}>
                     <DrawerTrigger asChild>
-                        {children}
+                        <button>
+                            {children}
+                        </button>
                     </DrawerTrigger>
                     <DrawerContent>
                         <DrawerHeader className="text-left">
@@ -49,7 +53,7 @@ export function DrawerPopover({title, description, body, children}: {
                         {body && <p className={"p-4"}>  {body}</p>}
                         <DrawerFooter className="pt-2">
                             <DrawerClose asChild>
-                                <Button variant="outline">Cancel</Button>
+                                <Button variant="outline">{t.Close}</Button>
                             </DrawerClose>
                         </DrawerFooter>
                     </DrawerContent>

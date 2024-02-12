@@ -14,7 +14,7 @@ export default function AboutSection({translations, currentLanguage}: {
         <TranslationsContext.Provider value={{translations, currentLanguage}}>
             <section
                 className={cn(
-                    "flex min-h-screen flex-col items-center gap-10 p-5 pb-24"
+                    "flex min-h-svh flex-col items-center gap-10 p-5 pb-24"
                 )}>
                 <AboutSectionHeader/>
                 <AboutSectionBentoGrid className={"md:w-[80vw]"}/>
