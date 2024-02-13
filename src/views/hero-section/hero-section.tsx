@@ -16,7 +16,7 @@ export default function HeroSection({translations, currentLanguage}: {
             <section
                 className={cn(
                     styles.section,
-                    "flex min-h-svh flex-col items-center justify-between gap-3 md:gap-20 p-5 mt-7 md:mt-20 pb-24"
+                    "flex min-h-svh flex-col items-center justify-between gap-3 md:gap-20 p-5 pb-24"
                 )}>
 
                 <div className={cn(

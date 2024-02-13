@@ -43,7 +43,8 @@ export default function ProjectItem({projectName, projectDescription, src, alt, 
             />
             <div className={cn(
                 "w-full h-full p-4 md:p-10 pb-5 top-0 left-0 absolute opacity-0",
-                "group-focus:opacity-100 group-active:opacity-100 group-hover:opacity-100 transition duration-300 ease-in-out bg-background/80 backdrop-blur-lg backdrop-filter",
+                "group-focus:opacity-100 group-active:opacity-100 group-hover:opacity-100 transition duration-300 ease-in-out ",
+                "bg-background/80 backdrop-blur-lg backdrop-filter",
                 "flex flex-col justify-end gap-3 md:gap-5 visible",
                 open && "opacity-100",
             )}>

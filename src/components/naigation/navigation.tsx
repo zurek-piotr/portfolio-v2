@@ -2,13 +2,15 @@
 
 import styles from './navigation.module.css';
 import {ThemeModeToggle} from "@/components/theme-mode-toggle";
-import {Button} from "@/components/ui/button";
+import {Button, buttonVariants} from "@/components/ui/button";
 import {Translations, TranslationsContext} from "@/contexts/translations-context";
 import {LanguageToggle} from "@/components/language-toggle";
 import {useCallback, useEffect, useState} from "react";
 import {cn} from "@/lib/utils";
 import {usePathname} from "next/navigation";
 import {HireMeButton} from "@/components/hire-me-button";
+import {CommandMenu} from "@/components/command-menu";
+import Link from "next/link";
 
 export default function Navigation({translations, currentLanguage}: {
     translations: Translations,
@@ -42,11 +44,27 @@ export default function Navigation({translations, currentLanguage}: {
     </div>
 
     const buttons = <>
-        <Button className={cn(buttonClasses, pathname === `/${currentLanguage}` && "bg-accent/50")}
-                variant={"ghost"}>{translations?.About}</Button>
-        <Button className={buttonClasses} variant={"ghost"}>{translations?.Projects}</Button>
+        <Link
+            className={cn(
+                buttonVariants({variant: "ghost"}),
+                buttonClasses,
+                pathname === `/${currentLanguage}` && "bg-accent/50"
+            )}
+            href={`/${currentLanguage}`}
+        >
+            {translations?.About}
+        </Link>
+        <Link
+            className={cn(
+                buttonVariants({variant: "ghost"}),
+                buttonClasses
+            )}
+            href={`/${currentLanguage}/projects`}
+            >
+            {translations?.Projects}
+        </Link>
         <Button className={buttonClasses} variant={"ghost"}>{translations?.Contact}</Button>
-        <HireMeButton className={buttonClasses}>{translations?.Hire_me}</HireMeButton>
+        <HireMeButton className={buttonClasses}/>
     </>
 
     return (
@@ -66,6 +84,11 @@ export default function Navigation({translations, currentLanguage}: {
                         "motion-reduce:transition-none",
                         hasBackground && styles.background
                     )}>
+                    <CommandMenu className={cn(
+                        buttonClasses,
+                        "max-md:hidden bg-transparent text-foreground mr-3 p-3 py-4 font-extralight",
+                        "hover:bg-accent hover:border-accent hover:text-accent-foreground border-foreground/30",
+                    )} />
                     {buttons}
                 </div>
             </nav>

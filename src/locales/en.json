@@ -12,5 +12,13 @@
   "Toggle_language": "Toggle language",
   "Close": "Zamknij",
   "Design_enthusiast": "Design enthusiast",
+  "mail": {
+    "hire_me": {
+        "subject": "\uD83D\uDCBC Job offer",
+        "body": "Hi Piotr,%0D%0A%0D%0AI would like to hire you."
+    }
+  },
+  "No_results_found": "No results found",
+  "Type_a_command_or_search": "Type a command or search",
   "about_frontend_angular": "I have been working with Angular for the past 3 years. I have developed a wide range of applications from small to large scale. I have a strong understanding of the Angular framework and its ecosystem."
 }

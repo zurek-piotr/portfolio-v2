@@ -15,6 +15,7 @@ export default function FooterSection({translations, currentLanguage}: {
     const linkClasses = "flex flex-row flex-nowrap items-center gap-2 hover:underline underline-offset-2 decoration-primary transition duration-300 ease-in-out"
     const mail = "kontakt@zurekpiotr.pl"
     const linkedIn = "https://www.linkedin.com/in/zurek-piotr/"
+    const cvLink = `/${currentLanguage}/piotr_zurek_cv.pdf`
 
     return (
         <TranslationsContext.Provider value={{translations, currentLanguage}}>
@@ -25,21 +26,25 @@ export default function FooterSection({translations, currentLanguage}: {
                 )}>
 
                 <div className={"flex flex-col gap-3 text-xl"}>
-                    <Link className={linkClasses} href={`mailto:${mail}`}><IconMail className={"size-8"} stroke={1} /> {mail}</Link>
-                    <Link className={linkClasses} href={linkedIn}><IconBrandLinkedin className={"size-8"} stroke={1}/> LinkedIn</Link>
-                    <Link className={linkClasses} href={linkedIn}><IconFileCv className={"size-8"} stroke={1}/> CV</Link>
+                    <Link className={linkClasses} href={`mailto:${mail}`}>
+                        <IconMail className={"size-8"} stroke={1}/> {mail}
+                    </Link>
+                    <Link className={linkClasses} href={linkedIn}>
+                        <IconBrandLinkedin className={"size-8"} stroke={1}/> LinkedIn
+                    </Link>
+                    <Link className={linkClasses} href={cvLink} target={"_blank"}>
+                        <IconFileCv className={"size-8"} stroke={1}/> CV
+                    </Link>
                 </div>
 
-                <Link className={"md:order-last"} href={`mailto:${mail}`}>
-                    <HireMeButton
-                        iconClassName={"size-12"}
-                        className={cn(
-                            "rounded-full bg-accent p-8 text-4xl hover:bg-primary/10",
-                            "md:text-2xl lg:text-4xl "
-                        )}>
-                        {translations?.Hire_me}
-                    </HireMeButton>
-                </Link>
+                <HireMeButton
+                    linkClassName={"md:order-last"}
+                    iconClassName={"size-12"}
+                    className={cn(
+                        "rounded-full bg-accent p-8 text-4xl hover:bg-primary/10",
+                        "md:text-2xl lg:text-4xl"
+                    )}
+                />
 
                 <div className={"flex flex-col gap-2 pb-5"}>
                     <Face className={"h-36"}/>
