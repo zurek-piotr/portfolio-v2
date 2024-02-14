@@ -30,7 +30,7 @@ export function DrawerPopover({title, description, body, children}: {
         <div>
             {isDesktop ? (
                 <Popover>
-                    <PopoverTrigger>{children}</PopoverTrigger>
+                    <PopoverTrigger title={title}>{children}</PopoverTrigger>
                     <PopoverContent>
                         <h4 className={cn("font-bold", !body && "text-center")}>{title}</h4>
                         {body && <p>{body}</p>}
@@ -39,7 +39,7 @@ export function DrawerPopover({title, description, body, children}: {
             ) : (
                 <Drawer open={open} onOpenChange={setOpen}>
                     <DrawerTrigger asChild>
-                        <button>
+                        <button title={title}>
                             {children}
                         </button>
                     </DrawerTrigger>

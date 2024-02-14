@@ -5,7 +5,7 @@ import Image from "next/image";
 import {Badge} from "@/components/ui/badge";
 import React, {useEffect, useRef} from "react";
 
-export default function ProjectItem({projectName, projectDescription, src, alt, fill, sizes, technologies, className}: {
+export default function ProjectItem({projectName, projectDescription, src, alt, fill, sizes, technologies, rootClassName, imageClassName}: {
     projectName: string,
     projectDescription: string,
     src: string,
@@ -13,7 +13,8 @@ export default function ProjectItem({projectName, projectDescription, src, alt, 
     fill: boolean,
     sizes: string,
     technologies?: string[],
-    className?: string
+    rootClassName?: string
+    imageClassName?: string
 
 }) {
     const [open, setOpen] = React.useState(false)
@@ -33,13 +34,14 @@ export default function ProjectItem({projectName, projectDescription, src, alt, 
     }, [ref]);
 
     return (
-        <div className={"w-full h-full group"} onClick={() => setOpen(!open)} ref={ref}>
+        <div className={cn("absolute top-0 left-0 w-full h-full group object-cover overflow-hidden rounded-xl", rootClassName)} onClick={() => setOpen(!open)} ref={ref}>
             <Image
-                className={cn("object-cover", className)}
+                className={cn("object-cover", imageClassName)}
                 src={src}
                 alt={alt}
                 fill={fill}
                 sizes={sizes}
+                priority={true}
             />
             <div className={cn(
                 "w-full h-full p-4 md:p-10 pb-5 top-0 left-0 absolute opacity-0",

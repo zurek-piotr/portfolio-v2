@@ -51,15 +51,18 @@ export default function Navigation({translations, currentLanguage}: {
                 pathname === `/${currentLanguage}` && "bg-accent/50"
             )}
             href={`/${currentLanguage}`}
+            scroll={false}
         >
             {translations?.About}
         </Link>
         <Link
             className={cn(
                 buttonVariants({variant: "ghost"}),
-                buttonClasses
+                buttonClasses,
+                pathname === `/${currentLanguage}/projects` && "bg-accent/50"
             )}
             href={`/${currentLanguage}/projects`}
+            scroll={false}
             >
             {translations?.Projects}
         </Link>

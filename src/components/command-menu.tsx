@@ -73,17 +73,17 @@ export function CommandMenu({className = ""}: { className?: string }) {
                 <CommandInput placeholder={`${t.Type_a_command_or_search}...`}/>
                 <CommandList>
                     <CommandEmpty>{t.No_results_found}.</CommandEmpty>
-                    <CommandItem>
+                    <CommandItem onSelect={() => aboutRef.current?.click()}>
                         <IconUser className="mr-2 h-4 w-4"/>
-                        <Link ref={aboutRef} href={`/${currentLanguage}`}>{t.About}</Link>
+                        <Link scroll={false} ref={aboutRef} href={`/${currentLanguage}`}>{t.About}</Link>
                         <CommandShortcut>⌘A</CommandShortcut>
                     </CommandItem>
-                    <CommandItem>
+                    <CommandItem onSelect={() => projectsRef.current?.click()}>
                         <IconBulb className="mr-2 h-4 w-4"/>
-                        <Link ref={projectsRef} href={`/${currentLanguage}/projects`}>{t.Projects}</Link>
+                        <Link scroll={false} ref={projectsRef} href={`/${currentLanguage}/projects`}>{t.Projects}</Link>
                         <CommandShortcut>⌘P</CommandShortcut>
                     </CommandItem>
-                    <CommandItem>
+                    <CommandItem onSelect={() => contactRef.current?.click()}>
                         <IconMessage className="mr-2 h-4 w-4"/>
                         <span ref={contactRef}>{t.Contact}</span>
                         <CommandShortcut>⌘C</CommandShortcut>

@@ -4,15 +4,18 @@ import {cn} from "@/lib/utils";
 import {Carousel, CarouselContent, CarouselItem} from "@/components/ui/carousel/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import {DrawerPopover} from "@/components/ui/drawer-popover";
-import {TranslationsContextProps, useTranslations} from "@/contexts/translations-context";
+import {getTranslation, TranslationsContextProps, useTranslations} from "@/contexts/translations-context";
 import {CarouselElement} from "@/views/about-section/components/bento-grid/components/carousel-data";
 import useMediaQuery from "@/app/hooks/use-media-query";
 import {IsDesktopContext} from "@/contexts/is-desktop-context";
+import Image from "next/image";
+import React from "react";
 
 export default function BentoGridCarousel({title, carouselData}: { title: string, carouselData: CarouselElement[] }) {
     const {translations: t}: TranslationsContextProps = useTranslations();
-    const carouselBasis = "[&>*]:basis-1/2 md:[&>*]:basis-1/3 xl:[&>*]:basis-1/4 2xl:[&>*]:basis-1/6"
+    const carouselBasis = "[&>*]:basis-1/2 md:[&>*]:basis-1/3 xl:[&>*]:basis-1/4 2xl:[&>*]:basis-1/5"
     const iconClasses = "size-32 hover:scale-110"
+    const imageClasses = "relative size-32 hover:scale-110"
     const isDesktop = useMediaQuery("(min-width: 768px)")
 
     return (
@@ -40,10 +43,21 @@ export default function BentoGridCarousel({title, carouselData}: { title: string
                             <CarouselItem key={index}>
                                 <DrawerPopover
                                     title={item?.title}
-                                    body={item?.body ? t?.[item.body] : undefined}
+                                    body={item?.body ? getTranslation(t, item.body) : undefined}
                                 >
                                     {item?.icon &&
-                                        <item.icon className={cn(iconClasses, item.iconClasses)} stroke={1}/>}
+                                        <item.icon className={cn(iconClasses, item.iconClasses)} stroke={1}/>
+                                    }
+
+                                    {item?.imageSrc &&
+                                        <div className={cn(imageClasses)}>
+                                        <Image
+                                            src={item.imageSrc}
+                                            alt={item.title}
+                                            fill
+                                        />
+                                        </div>
+                                    }
                                 </DrawerPopover>
                             </CarouselItem>
                         ))

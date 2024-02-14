@@ -26,7 +26,7 @@ export function LanguageToggle() {
         <LangSwitch
             title={t.Toggle_language}
             checked={currentLanguage === "pl"}
-            onCheckedChange={() => push(redirectedPathName(otherLanguage))}
+            onCheckedChange={() => push(redirectedPathName(otherLanguage), {scroll: false})}
         />
     )
 }

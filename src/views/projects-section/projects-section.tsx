@@ -5,8 +5,8 @@ import {Translations, TranslationsContext} from "@/contexts/translations-context
 import {Carousel, CarouselApi, CarouselContent, CarouselItem} from "@/components/ui/carousel/carousel";
 import {useEffect, useState} from "react";
 import {Card, CardContent} from "@/components/ui/card";
-import ProjectItem from "@/views/projects-section/components/project-item";
-import ProjectsData, {Project} from "@/views/projects-section/components/projects-data";
+import ProjectsData, {Project} from "@/components/project-item/projects-data";
+import ProjectItem from "@/components/project-item/project-item";
 
 export default function ProjectsSection({translations, currentLanguage}: {
     translations: Translations,
@@ -54,7 +54,7 @@ export default function ProjectsSection({translations, currentLanguage}: {
                                 )}
                             >
                                 <Card className={cn(
-                                    "object-cover border-0 bg-accent",
+                                    "border-0 bg-accent",
                                     index === current && "bg-primary"
                                 )}>
                                     <CardContent className={cn(
@@ -65,7 +65,7 @@ export default function ProjectsSection({translations, currentLanguage}: {
                                         <ProjectItem
                                             projectName={project.title}
                                             projectDescription={project.description ? translations[project.description] : ""}
-                                            src={"/sample-site-gif.gif"}
+                                            src={"/images/sample-site-gif.gif"}
                                             alt={"Sample site gif"}
                                             fill={true}
                                             sizes={"(max-width: 768px) 100vw, 50vw"}

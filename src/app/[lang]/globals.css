@@ -81,12 +81,12 @@ body::after {
 
 /*body::before {*/
 /*  background: #000;*/
-/*  filter: url('/noise.svg#noiseFilter');*/
+/*  filter: url('/images/noise.svg#noiseFilter');*/
 /*  opacity: .7;*/
 /*}*/
 
 body::before {
-  background-image: url('/noise.gif');
+  background-image: url('/images/noise.gif');
   background-size: 120px;
   opacity: calc(25 / 100);
 }

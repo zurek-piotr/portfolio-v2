@@ -18,17 +18,20 @@ import {
     IconBrandReact,
     IconBrandStorybook,
     IconBrandStripe,
-    IconBrandTailwind, IconBrandTwilio,
+    IconBrandTailwind,
+    IconBrandTwilio,
     IconBrandTypescript,
     IconBrandVite,
-    IconBrandVue, IconBrandWordpress,
+    IconBrandVue,
+    IconBrandWordpress,
     IconSql
 } from "@tabler/icons-react";
 import {JSX} from "react";
 
 export interface CarouselElement {
     title: string;
-    icon: JSX.ElementType;
+    icon?: JSX.ElementType;
+    imageSrc?: string;
     body?: string;
     iconClasses?: string;
 }
@@ -129,11 +132,6 @@ export const BackendData: CarouselElement[] = [
         iconClasses: "text-[#68a063]",
     },
     {
-        title: "Nest.js",
-        icon: IconBrandJavascript,
-        iconClasses: "text-[#E0234E]",
-    },
-    {
         title: "Next.js",
         icon: IconBrandNextjs,
         iconClasses: "text-black",
@@ -157,6 +155,10 @@ export const BackendData: CarouselElement[] = [
         title: "PHP",
         icon: IconBrandPhp,
         iconClasses: "text-[#777BB3]",
+    },
+    {
+        title: "Nest.js",
+        imageSrc: "/icons/nestjs.svg",
     },
     {
         title: "Oauth",

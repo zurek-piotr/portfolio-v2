@@ -15,6 +15,6 @@ export const TranslationsContext: Context<TranslationsContextProps|null> = creat
 
 export const useTranslations = () => useContext(TranslationsContext) as TranslationsContextProps
 
-export function getTranslation(translations: Translations, key: string) {
-    return key.split('.').reduce((a, b) => a?.[b], translations) ?? "";
+export function getTranslation(translations: Translations, key: string): string {
+    return key.split('.').reduce((a, b) => a?.[b], translations)?.toString() ?? "";
 }
