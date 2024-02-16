@@ -12,13 +12,43 @@
   "Toggle_language": "Toggle language",
   "Close": "Zamknij",
   "Design_enthusiast": "Design enthusiast",
+  "No_results_found": "No results found",
+  "Type_a_command_or_search": "Type a command or search",
+  "about" : {
+    "frontend": {
+      "angular": "Angular"
+    }
+  },
   "mail": {
     "hire_me": {
         "subject": "\uD83D\uDCBC Job offer",
         "body": "Hi Piotr,%0D%0A%0D%0AI would like to hire you."
     }
   },
-  "No_results_found": "No results found",
-  "Type_a_command_or_search": "Type a command or search",
-  "about_frontend_angular": "I have been working with Angular for the past 3 years. I have developed a wide range of applications from small to large scale. I have a strong understanding of the Angular framework and its ecosystem."
+  "chat": {
+    "title": "Piotr Bot",
+    "Lets_talk": "Let's talk!",
+    "Hi": "Hi!",
+    "welcome_message": "I'm Piotr Bot. I'm here to help you with any questions you may have about me.",
+    "How_can_I_help_you_today": "How can I help you today?",
+    "Tell_me_something_about_you": "\uD83D\uDC68 Tell me something about you",
+    "What_s_your_experience": "\uD83D\uDCBC What's your experience?",
+    "Show_me_your_projects": "\uD83D\uDCA1 Show me your projects",
+    "We_d_like_to_hire_you": "\uD83E\uDD1D We'd like to hire you",
+    "hire": {
+        "Thank_you_for_your_interest": "Thank you for your interest! I'm looking forward to working with you.",
+        "Please_send_me_an_email": "Please send me an email. I will be happy to answer all your questions.",
+        "Send_email": "\uD83D\uDCE7 Send email"
+    },
+    "tell_me": {
+      "message": "I am a FullStack Developer who loves developing products and definitely has a can-do attitude. I like to stay up-to-date with the latest technologies and trends, hence my interest in design and commercial experience in AI. \n\nI love working with people who have a passion for what they do and want to create something unique. As a Tech Lead, I focus on honest communication, understanding business and technical needs, as well as teaching and developing the team.\n\nI believe that knowledge is for sharing, and not to keep for yourself. I am open to a new challenge, so if you are interested in working with me, let me know!"    },
+    "experience": {
+      "message": "I have been active on the IT market since 2017. In my first job as an IT specialist, I gained experience in working with clients and gained extensive knowledge of servers and networks. \n\nIn 2020, my commercial adventure as a FullStack Developer began, which in 2022 it turned into the role of Tech Leader. During this time, I gained experience in working with various technologies, such as Angular, Laravel, Typscript, PHP, Node.js, FastAPI, MongoDB, PostgreSQL.\n\nWorking on the development of a huge ERP project created since 1989, I have experienced problems of scale, integration with many other systems/services and migration. \nIn such a large project, I gained experience in team management, planning, estimating, as well as project management. \nRecent years have allowed me to gain experience in AI projects such as AI chat, predictive models. \n\nIf you want to learn more about my experience, please visit my LinkedIn or CV at the bottom of the page."    },
+    "projects": {
+      "message": "I'm glad you're interested in my projects. Come and see them on my website.",
+      "take_me": "\uD83C\uDFCE\uFE0F Take me there!"
+    },
+    "Back_to_other_options": "\uD83D\uDD19 Back to other options",
+    "Can_I_help_you_with_anything_else": "Can I help you with anything else?"
+  }
 }

@@ -6,7 +6,7 @@ import {ThemeSwitch} from "@/components/ui/theme-switch";
 import {TranslationsContextProps, useTranslations} from "@/contexts/translations-context";
 
 export function ThemeModeToggle() {
-    const {setTheme, resolvedTheme} = useTheme()
+    const {resolvedTheme, setTheme} = useTheme()
     const {translations: t}: TranslationsContextProps = useTranslations();
 
     return (

@@ -17,8 +17,8 @@ export default async function Home({params: {lang}}: { params: { lang: Locale } 
                 <HeroSection translations={translations} currentLanguage={lang}/>
                 <AboutSection translations={translations} currentLanguage={lang}/>
                 <ProjectsSection translations={translations} currentLanguage={lang}/>
-                <FooterSection translations={translations} currentLanguage={lang}/>
             </main>
+            <FooterSection translations={translations} currentLanguage={lang}/>
         </>
     );
 }

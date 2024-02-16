@@ -45,7 +45,7 @@ export const FrontendData: CarouselElement[] = [
     {
         title: "Angular",
         icon: IconBrandAngular,
-        body: "about_frontend_angular",
+        body: "about.frontend.angular",
         iconClasses: "text-[#B52E31]",
     },
     {

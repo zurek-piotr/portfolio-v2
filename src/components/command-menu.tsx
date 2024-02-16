@@ -13,16 +13,23 @@ import {
 import {IconBulb, IconMessage, IconUser} from "@tabler/icons-react";
 import {cn} from "@/lib/utils";
 import {TranslationsContextProps, useTranslations} from "@/contexts/translations-context";
-import {HireMeButton} from "@/components/hire-me-button";
+import {HireMeButton} from "@/components/hire-me-button/hire-me-button";
 import Link from "next/link";
+import {useIsOpenChat} from "@/contexts/is-open-chat-context";
 
 export function CommandMenu({className = ""}: { className?: string }) {
+    const {setIsOpenChat} = useIsOpenChat();
     const [open, setOpen] = React.useState(false)
     const {translations: t, currentLanguage}: TranslationsContextProps = useTranslations();
     const aboutRef = React.useRef<HTMLAnchorElement>(null)
     const projectsRef = React.useRef<HTMLAnchorElement>(null)
     const contactRef = React.useRef<HTMLAnchorElement>(null)
     const hireRef = React.useRef<HTMLAnchorElement>(null)
+
+    function openChat() {
+        setIsOpenChat(true);
+        setOpen(false);
+    }
 
     React.useEffect(() => {
         const down = (e: KeyboardEvent) => {
@@ -85,7 +92,7 @@ export function CommandMenu({className = ""}: { className?: string }) {
                     </CommandItem>
                     <CommandItem onSelect={() => contactRef.current?.click()}>
                         <IconMessage className="mr-2 h-4 w-4"/>
-                        <span ref={contactRef}>{t.Contact}</span>
+                        <span onClick={() => openChat()} ref={contactRef}>{t.Contact}</span>
                         <CommandShortcut>⌘C</CommandShortcut>
                     </CommandItem>
                     <CommandItem onSelect={() => hireRef.current?.click()} className={"group"}>

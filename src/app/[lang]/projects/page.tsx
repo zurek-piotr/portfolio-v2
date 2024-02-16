@@ -13,8 +13,8 @@ export default async function Home({params: {lang}}: { params: { lang: Locale } 
             <Navigation translations={translations} currentLanguage={lang}/>
             <main className={"flex flex-col gap-24 pt-7 md:pt-20"}>
                 <ProjectsGridSection translations={translations} currentLanguage={lang}/>
-                <FooterSection translations={translations} currentLanguage={lang}/>
             </main>
+            <FooterSection translations={translations} currentLanguage={lang}/>
         </>
     );
 }

@@ -5,7 +5,8 @@ import {Button} from "@/components/ui/button";
 import {cn} from "@/lib/utils";
 import {IconHeartHandshake} from "@tabler/icons-react";
 import Link from "next/link";
-import {getTranslation, TranslationsContextProps, useTranslations} from "@/contexts/translations-context";
+import {TranslationsContextProps, useTranslations} from "@/contexts/translations-context";
+import {getMailTo} from "@/components/hire-me-button/utils";
 
 
 export function HireMeButton({linkClassName, iconClassName, className, innerRef, ...props}: {
@@ -15,13 +16,12 @@ export function HireMeButton({linkClassName, iconClassName, className, innerRef,
     innerRef?: React.Ref<HTMLAnchorElement>
 }) {
     const {translations: t}: TranslationsContextProps = useTranslations();
-    const mail = "kontakt@zurekpiotr.pl"
 
     return (
         <Link
             ref={innerRef}
             className={cn(linkClassName, "group")}
-            href={`mailto:${mail}?subject=${getTranslation(t, "mail.hire_me.subject")}&body=${getTranslation(t, "mail.hire_me.body")}`}
+            href={getMailTo(t)}
         >
             <Button
                 className={cn("bg-secondary dark:bg-primary dark:text-primary-foreground", className)}

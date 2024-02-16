@@ -3,9 +3,10 @@
 import {cn} from "@/lib/utils";
 import {Translations, TranslationsContext} from "@/contexts/translations-context";
 import Face from "@/components/face/face";
-import {HireMeButton} from "@/components/hire-me-button";
+import {HireMeButton} from "@/components/hire-me-button/hire-me-button";
 import Link from "next/link";
 import {IconBrandLinkedin, IconFileCv, IconMail} from "@tabler/icons-react";
+import {getMailTo} from "@/components/hire-me-button/utils";
 
 export default function FooterSection({translations, currentLanguage}: {
     translations: Translations,
@@ -26,7 +27,7 @@ export default function FooterSection({translations, currentLanguage}: {
                 )}>
 
                 <div className={"flex flex-col gap-3 text-xl"}>
-                    <Link className={linkClasses} href={`mailto:${mail}`}>
+                    <Link className={linkClasses} href={getMailTo(translations)}>
                         <IconMail className={"size-8"} stroke={1}/> {mail}
                     </Link>
                     <Link className={linkClasses} href={linkedIn}>

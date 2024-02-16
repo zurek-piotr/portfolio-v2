@@ -12,8 +12,45 @@
   "Toggle_language": "Zmień język",
   "Close": "Zamknij",
   "Design_enthusiast": "Uwielbiam design",
-  "mail_subject": "Uwielbiam design",
   "No_results_found": "Nie znaleziono wyników",
   "Type_a_command_or_search": "Wprowadź komendę lub wyszukaj",
-  "about_frontend_angular": "Tworzę aplikacje internetowe z wykorzystaniem Angulara"
+  "about" : {
+    "frontend": {
+      "angular": "Angular"
+    }
+  },
+  "mail": {
+    "hire_me": {
+      "subject": "\uD83D\uDCBC Oferta pracy",
+      "body": "Cześć Piotr,%0D%0A%0D%0AChciałbym Cię zatrudnić."
+    }
+  },
+  "chat": {
+    "title": "Bot Piotr",
+    "Lets_talk": "Porozmawiajmy!",
+    "Hi": "Cześć!",
+    "welcome_message": "Jestem botem, który pomoże Ci dowiedzieć się więcej o mnie.",
+    "How_can_I_help_you_today": "Jak mogę Ci dzisiaj pomóc?",
+    "Tell_me_something_about_you": "\uD83D\uDC68 Powiedz mi coś o sobie",
+    "What_s_your_experience": "\uD83D\uDCBC Jakie masz doświadczenie?",
+    "Show_me_your_projects": "\uD83D\uDCA1 Pokaż mi swoje projekty",
+    "We_d_like_to_hire_you": "\uD83E\uDD1D Chcielibyśmy Cię zatrudnić",
+    "hire": {
+      "Thank_you_for_your_interest": "Dziękuję za zainteresowanie. Nie mogę się doczekać, aby dowiedzieć się więcej o tej ofercie.",
+      "Please_send_me_an_email": "Wyślij mi e-maila. Chętnie odpowiem na wszystkie pytania, które masz.",
+      "Send_email": "\uD83D\uDCE7 Wyślij e-mail"
+    },
+    "tell_me": {
+      "message": "Jestem FullStack Developerem, który uwielbia rozwijać produkty i ma definitywnie can-do attitude. Lubie być up-to-date z najnowszymi technologiami i trendami, stąd moje zainteresowanie designem oraz komercyjne doświadczenie w AI. \n\nUwielbiam pracować z ludźmi, którzy mają pasję do tego, co robią i chcą tworzyć coś wyjątkowego. W roli Tech Leada stawiam na szczerą komunikację, zrozumienie potrzeb biznesowych i technicznych, a także nauczanie i rozwijanie zespołu.\n\nWierzę, że wiedza jest do dzielenia się, a nie do trzymania dla siebie. Jestem otwarty na nowe wyzwanie, dlatego jeśli jesteś zainteresowany współpracą ze mna, daj mi znać!"
+    },
+    "experience": {
+      "message": "Od 2017 jestem aktywny na rynku IT. W pierwszej pracy jako IT specialist nabrałem doświadczenia w pracy z klientem oraz zyskałem szeroką więdzę z zakresu serwerów i sieci. \n\nW 2020 rozpoczęła się moja komercyjna przygoda jako FullStack Developer, która w 2022 przerodziła się w role Tech Leadera. W tym czasie zdobyłem doświadczenie w pracy z różnymi technologiami, takimi jak Angular, Laravel, Typscript, PHP, Node.js, FastAPI, MongoDB, PostgreSQL.\n\nPracując nad rozwojem ogromnego projektu klasy ERP tworzonego od 1989, doświadczyłem problemów skali, integracji z wieloma innymi systemami/usługami oraz migracji. \nW tak wielkim projekcie zasięgnąłem doświadczenie z zarządzania zespołem, planowania, szacowania, a także z zarządzania projektami. \nOstatnie lata pozwoliły mi na zdobycie doświadczenia w projektach AI jak AI chat, modele predykcyjne. \n\nJeśli chcesz dowiedzieć się więcej o moim doświadczeniu, zapraszam na mój LinkedIn lub CV na dole strony."
+    },
+    "projects": {
+      "message": "Cieszę się, że chcesz zobaczyć moje projekty. Chodź i zobacz!",
+      "take_me": "\uD83C\uDFCE\uFE0F Zabierz mnie tam!"
+    },
+    "Back_to_other_options": "\uD83D\uDD19 Wróć do innych opcji",
+    "Can_I_help_you_with_anything_else": "Czy mogę Ci w czymś jeszcze pomóc?"
+  }
 }

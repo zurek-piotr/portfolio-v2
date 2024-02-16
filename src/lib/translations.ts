@@ -1,5 +1,5 @@
 import 'server-only'
-import type { Locale } from '@/i18n.config'
+import {Locale} from '@/i18n.config'
 
 const locales = {
     en: () => import('@/locales/en.json').then(module => module.default),
