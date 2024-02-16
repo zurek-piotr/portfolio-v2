@@ -14,6 +14,9 @@
   "Design_enthusiast": "Design enthusiast",
   "No_results_found": "No results found",
   "Type_a_command_or_search": "Type a command or search",
+  "project": {
+    "link": "Go to the project"
+  },
   "design_enthusiast": {
     "title": "I love design",
     "description": "I am a huge fan of design. My dream project is one that will include designers with whom I can collaborate to create something unique."
