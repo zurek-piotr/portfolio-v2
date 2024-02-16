@@ -11,12 +11,66 @@
   "Toggle_theme": "Zmień motyw",
   "Toggle_language": "Zmień język",
   "Close": "Zamknij",
-  "Design_enthusiast": "Uwielbiam design",
   "No_results_found": "Nie znaleziono wyników",
   "Type_a_command_or_search": "Wprowadź komendę lub wyszukaj",
-  "about" : {
+  "design_enthusiast": {
+    "title": "Uwielbiam design",
+    "description": "Jestem wielkim fanem designu. Wymarzony projekt to taki, który będzie zawierał designerów, z którymi będę mógł współpracować, aby stworzyć coś wyjątkowego."
+  },
+  "ai_exp": {
+    "title": "AI EXP",
+    "description": "Posiadam doświadczenie w pracy z AI. Realizując ostatnie projekty jak AI Chat czy modele predykcyjne, zdobyłem doświadczenie w sektorze sztucznej inteligencji."
+  },
+  "tech_lead": {
+    "title": "Tech Lead",
+    "description": "W roli Tech Leada stawiam na szczerą komunikację, zrozumienie potrzeb biznesowych i technicznych, a także nauczanie i rozwijanie zespołu."
+  },
+  "me_card": {
+    "description": "Jestem FullStack Developerem, który uwielbia rozwijać produkty i ma definitywnie can-do attitude. Lubie być up-to-date z najnowszymi technologiami i trendami, stąd moje zainteresowanie designem oraz komercyjne doświadczenie w AI. Uwielbiam pracować z ludźmi, którzy mają pasję do tego, co robią i chcą tworzyć coś wyjątkowego. Wierzę, że wiedza jest do dzielenia się, a nie do trzymania dla siebie. Jestem otwarty na nowe wyzwanie, dlatego jeśli jesteś zainteresowany współpracą ze mna, daj mi znać!"
+  },
+  "love_develop_product": {
+    "title_up": "Kocham rozwijać",
+    "title_down": "produkty",
+    "description": "Jestem wielkim fanem rozwijania produktów. Uwielbiam pracować z ludźmi, którzy mają pasję do tego, co robią i chcą tworzyć coś wyjątkowego."
+  },
+  "tools_builder": {
+    "title": "Automatyzacja",
+    "description": "Uwielbiam automatyzować wszystko, co się da oraz tworzyć narzędzia rozwiązujące codzienne bolączki. Dzięki temu mogę pomóc zespołowi w osiągnięciu większej produktywności."
+  },
+  "bouldering_freak": {
+    "title": "Bouldering Freak",
+    "description": "W wolnym czasie uwielbiam wspinaczkę na baldach. To moja pasja, która pozwala mi na reset po ciężkim dniu pracy."
+  },
+  "about": {
+    "typescript": "Wielki fan TypeScript, który wykorzystałem w wielu projektach komercyjnych zarówno na FrontEndzie jak i BackEndzie. W projekcie klasy ERP przekształciłem cały projekt z JavaScript na TypeScript.",
+    "oauth": "We wszystkich komercyjnych projektach wykorzystywałem OAuth2 do autoryzacji użytkowników. Zarówno od strony frontendu jak i backendu. W projekcie klasy ERP integrowałem różne systemy SSO min. CAS, oraz 2FA jak Google Authenticator.",
+      "nextjs": "Najnowszy romans, który czuje, że będzie trwał długo. Ta strona jest właśnie zbudowana w Next.js.",
     "frontend": {
-      "angular": "Angular"
+      "angular": "Wieloletnie doświadczenie w pracy z Angular już od wersji 10. Rozwijałem projekt klasy ERP, który przekształciłem z Module-Based na Standalone Components (Skala ponad 4000 modułów). Obecnie projekt posiada kilka tysięcy komponentów, które z sukcesem przeniosłem do nowego MDC.",
+      "javascript": "Rodzic języków FrontEndowych, który wykorzystałem w wielu projektach komercyjnych. Mimo że TypeScript jest moim ulubionym językiem, to JavaScript jest językiem, który mnie wychował (No może bardziej ten lepszy rodzic bo pierwszy to C++).",
+      "vue": "Pierwszy framework, który mnie zafascynował swoją prostotą. Wykorzystałem go w kilku projektach komercyjnych, które pozwoliły mi na zdobycie doświadczenia w pracy z Vue.",
+      "react": "Obecnie wykorzystuje najczęściej w akompaniamencie z Next.js. Wcześniej wykorzystywałem głównie w małych projektach.",
+      "vite": "Jak tworzyć z prędkością światła w Vue? Vite jest odpowiedzią.",
+      "tailwind": "Duży fan TailwindCSS, który stara się zapomnieć już o Bootstrap.",
+      "bootstrap": "Wieloletnie doświadczenie w pracy z Bootstrap, który wykorzystałem w wielu projektach komercyjnych. W projekcie klasy ERP przekształciłem cały projekt z Bootstrap3 na Bootstrap4 a finalnie Bootstrap5.",
+      "wordpress": "Doświadczenie w pracy z WordPress, z wykorzystaniem takich wtyczek jak WooComerce, Yoast SEO, Elementor czy Divi.",
+      "storybook": "Tworzyłem biblioteki komponentów z pomocą Storybook.",
+      "cypress": "Doświadczenie w pracy z Cypress, który wykorzystałem do testów E2E w projektach opartych o Angular.",
+      "figma": "Mój ulubiony program do tworzenia prototypów/designu. Zastąpił mi wszystkie inne narzędzia Adobe jak Adobe Photoshop, Adobe Illustrator, Adobe XD.",
+      "html": "Zawsze staram się pisać semantyczny HTML, który jest zgodny z WCAG.",
+      "css": "Jak kochać design i nie kochać CSS? Lubie go pisać w SCSS, choć obecnie Tailwind w dużej części mnie wyręcza."
+    },
+    "backend": {
+      "laravel": "Doświadczenie w pracy z Laravel, który wykorzystałem do stworzenia API dla projektu klasy ERP. Skala projektu przyniosła wiele wyzwań, które przekształciły mnie w doświadczonego developera (Ponad 2000 endpointów). W Laravel tworzyłem również ciekawy projekt to realizacji Erasmus Without Network (EWP), który był oparty o rozproszoną sieć API z uwzględnieniem zaawansowanych technologii szyfrowania i transformacji XSL",
+      "payments": "W projektach komercyjnych integrowałem systemy płatności, takie jak Przelewy24, Stripe.",
+      "fastapi": "Ostatnie projekty pozwoliły mi na zdobycie doświadczenia w pracy z FastAPI, który wykorzystałem do komercyjnych projektów AI jak AI Chat.",
+      "sql": "Doświadczenie w pracy z bazami danych, takimi jak PostgreSQL, MySQL, SQLite, MSSQL. W projekcie klasy ERP wykorzystałem OpenEdge Progress połączony po ODBC. W projekcie AI Chat wykorzystałem MongoDB.",
+      "mongodb": "Doświadczenie w pracy z MongoDB, które wykorzystałem w projektach AI jak AI Chat.",
+      "twilio": "Integrowałem Twilio w projekcie skali ERP do wysyłania SMSów. Ponadto integrowałem system typu Marketing Automation jak Mautic.",
+      "php": "Doświadczenie z wielkim legacy code (Projekt kilkunastoletni) który migrowałem począwszy od wersji 4.4 po 8.X. W nowszych projektach wykorzystywałem framework Laravel.",
+      "nodejs": "Doświadczenie w pracy z Node.js, który wykorzystałem w kilku projektach komercyjnych. Przy pomocy biblioteki zx przepisałem wiele skryptów w projektach.",
+      "nestjs": "Polski framework, który z dumą obserwuje jak rośnie. Życzyłbym sobie więcej projektów, w których mógłbym go wykorzystać.",
+      "cakephp": "Doświadczenie w pracy z CakePHP."
     }
   },
   "mail": {

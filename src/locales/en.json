@@ -14,9 +14,64 @@
   "Design_enthusiast": "Design enthusiast",
   "No_results_found": "No results found",
   "Type_a_command_or_search": "Type a command or search",
-  "about" : {
+  "design_enthusiast": {
+    "title": "I love design",
+    "description": "I am a huge fan of design. My dream project is one that will include designers with whom I can collaborate to create something unique."
+  },
+  "ai_exp": {
+    "title": "AI EXP",
+    "description": "I have experience in working with AI. By implementing recent projects such as AI Chat or predictive models, I gained experience in the artificial intelligence sector."
+  },
+  "tech_lead": {
+    "title": "Tech Lead",
+    "description": "As a Tech Lead, I focus on honest communication, understanding business and technical needs, as well as teaching and developing the team."
+  },
+  "me_card": {
+    "description": "I am a FullStack Developer who loves developing products and has a definitive can-do attitude. I like to stay up-to-date with the latest technologies and trends, hence my interest in design and commercial experience in AI. I love working with people who they have a passion for what they do and want to create something unique. I believe that knowledge is to be shared, not to be kept to yourself. I am open to a new challenge, so if you are interested in working with me, let me know!"
+  },
+  "love_develop_product": {
+    "title_up": "I love to develop",
+    "title_down": "products",
+    "description": "I'm a big fan of product development. I love working with people who have passion for what they do and want to create something unique."
+  },
+  "tools_builder": {
+    "title": "Automation",
+    "description": "I love automating everything I can and creating tools that solve everyday problems. This allows me to help my team be more productive."
+  },
+  "bouldering_freak": {
+    "title": "Bouldering Freak",
+    "description": "In my free time, I love canopy climbing. It's my passion, which allows me to reset after a hard day's work."
+  },
+  "about": {
+    "typescript": "A big fan of TypeScript, which I have used in many commercial projects, both on FrontEnd and BackEnd. In an ERP project, I converted the entire project from JavaScript to TypeScript.",
+    "oauth": "In all commercial projects, I used OAuth2 to authorize users. Both from the frontend and backend. In the ERP class project, I integrated various SSO systems, including CAS, and 2FA such as Google Authenticator.",
+    "nextjs": "The latest romance that feels like it will last a long time. This site is currently built in Next.js.",
     "frontend": {
-      "angular": "Angular"
+      "angular": "Many years of experience in working with Angular, starting from version 10. I developed an ERP class project, which I transformed from Module-Based to Standalone Components (Scale of over 4,000 modules). Currently, the project has several thousand components, which I successfully transferred to the new one MDC.",
+      "javascript": "The parent of FrontEnd languages, which I have used in many commercial projects. Even though TypeScript is my favorite language, JavaScript is the language that raised me (well, maybe it's the better parent because the first one is C++).",
+      "vue": "The first framework that fascinated me with its simplicity. I used it in several commercial projects, which allowed me to gain experience in working with Vue.",
+      "react": "Currently I use it most often in accompaniment with Next.js. Previously I used it mainly in small projects.",
+      "vite": "How to create at light speed in Vue? Vite is the answer.",
+      "tailwind": "Big fan of TailwindCSS who is trying to forget about Bootstrap.",
+      "bootstrap": "Many years of experience in working with Bootstrap, which I used in many commercial projects. In an ERP project, I transformed the entire project from Bootstrap3 to Bootstrap4 and finally Bootstrap5.",
+      "wordpress": "Experience in working with WordPress, using plugins such as WooComerce, Yoast SEO, Elementor or Divi.",
+      "storybook": "I created component libraries with Storybook.",
+      "cypress": "Experience in working with Cypress, which I used for E2E testing in Angular-based projects.",
+      "figma": "My favorite program for creating prototypes/design. It replaced all other Adobe tools such as Adobe Photoshop, Adobe Illustrator, Adobe XD.",
+      "html": "I always try to write semantic HTML that is WCAG compliant.",
+      "css": "How can you love design and not love CSS? I like writing it in SCSS, although currently Tailwind does most of it for me."
+    },
+    "backend": {
+      "laravel": "Experience in working with Laravel, which I used to create an API for an ERP project. The scale of the project brought many challenges that turned me into an experienced developer (Over 2,000 endpoints). In Laravel, I also created an interesting project to implement Erasmus Without Network (EWP), which was based on a distributed API network including advanced encryption and XSL transformation technologies",
+      "payments": "In commercial projects, I integrated payment systems such as Przelewy24, Stripe.",
+      "fastapi": "Recent projects allowed me to gain experience in working with FastAPI, which I used for commercial AI projects such as AI Chat.",
+      "sql": "Experience in working with databases such as PostgreSQL, MySQL, SQLite, MSSQL. In the ERP class project I used OpenEdge Progress connected via ODBC. In the AI Chat project I used MongoDB.",
+      "mongodb": "Experience in working with MongoDB, which I used in AI projects like AI Chat.",
+      "twilio": "I integrated Twilio in a scale ERP project for sending SMS. Moreover, I integrated a Marketing Automation system like Mautic.",
+      "php": "Experience with large legacy code (a dozen-year-old project) that I migrated from version 4.4 to 8.X. In newer projects I used the Laravel framework.",
+      "nodejs": "Experience in working with Node.js, which I have used in several commercial projects. Using the zx library, I have rewritten many scripts in projects.",
+      "nestjs": "A Polish framework that I am proud to watch grow. I would like to see more projects in which I could use it.",
+      "cakephp": "Experience with CakePHP."
     }
   },
   "mail": {
