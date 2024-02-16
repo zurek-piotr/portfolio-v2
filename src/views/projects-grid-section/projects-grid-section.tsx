@@ -24,8 +24,7 @@ export default function ProjectsGridSection({translations, currentLanguage}: {
                             <CardContent
                                 className={"relative h-96 2xl:h-[30rem] object-cover overflow-hidden rounded-xl"}>
                                 <ProjectItem
-                                    projectName={project.title}
-                                    projectDescription={project.description ? translations[project.description] : ""}
+                                    project={project}
                                     src={"/images/sample-site-gif.gif"}
                                     alt={"Sample site gif"}
                                     fill={true}

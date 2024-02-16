@@ -62,7 +62,7 @@
       "css": "How can you love design and not love CSS? I like writing it in SCSS, although currently Tailwind does most of it for me."
     },
     "backend": {
-      "laravel": "Experience in working with Laravel, which I used to create an API for an ERP project. The scale of the project brought many challenges that turned me into an experienced developer (Over 2,000 endpoints). In Laravel, I also created an interesting project to implement Erasmus Without Network (EWP), which was based on a distributed API network including advanced encryption and XSL transformation technologies",
+      "laravel": "Experience in working with Laravel, which I used to create an API for an ERP project. The scale of the project brought many challenges that turned me into an experienced developer (Over 2,000 endpoints). In Laravel, I also created an interesting project, integration with Erasmus Without Network (EWP), which was based on a distributed API network including advanced encryption and XSL transformation technologies",
       "payments": "In commercial projects, I integrated payment systems such as Przelewy24, Stripe.",
       "fastapi": "Recent projects allowed me to gain experience in working with FastAPI, which I used for commercial AI projects such as AI Chat.",
       "sql": "Experience in working with databases such as PostgreSQL, MySQL, SQLite, MSSQL. In the ERP class project I used OpenEdge Progress connected via ODBC. In the AI Chat project I used MongoDB.",
@@ -72,6 +72,29 @@
       "nodejs": "Experience in working with Node.js, which I have used in several commercial projects. Using the zx library, I have rewritten many scripts in projects.",
       "nestjs": "A Polish framework that I am proud to watch grow. I would like to see more projects in which I could use it.",
       "cakephp": "Experience with CakePHP."
+    }
+  },
+  "projects": {
+    "foodtrack": {
+      "description": "An application that allows you to locate your favorite Food Trucks."
+    },
+    "server_manager": {
+      "description": "System for remote device supervision. Designed with IoT in mind."
+    },
+    "niebodowynajecia": {
+      "description": "Website of an astronomy popularizer who runs his mobile planetarium \"Niebo do wynajęcia\"."
+    },
+    "ipagro": {
+      "description": "E-commerce website. Sale and rental of construction and agricultural equipment."
+    },
+    "localvideoplayer": {
+      "description": "Local video player. Supports large files and playlist."
+    },
+    "portfoliov1": {
+      "description": "My first portfolio. Built in Vue."
+    },
+    "portfoliov2": {
+      "description": "Current portfolio. Built in Next.js."
     }
   },
   "mail": {

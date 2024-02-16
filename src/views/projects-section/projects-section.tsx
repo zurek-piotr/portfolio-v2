@@ -63,8 +63,7 @@ export default function ProjectsSection({translations, currentLanguage}: {
                                         index === current && "h-96"
                                     )}>
                                         <ProjectItem
-                                            projectName={project.title}
-                                            projectDescription={project.description ? translations[project.description] : ""}
+                                            project={project}
                                             src={"/images/sample-site-gif.gif"}
                                             alt={"Sample site gif"}
                                             fill={true}

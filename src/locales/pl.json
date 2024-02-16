@@ -13,6 +13,9 @@
   "Close": "Zamknij",
   "No_results_found": "Nie znaleziono wyników",
   "Type_a_command_or_search": "Wprowadź komendę lub wyszukaj",
+  "project": {
+    "link": "Link do projektu"
+  },
   "design_enthusiast": {
     "title": "Uwielbiam design",
     "description": "Jestem wielkim fanem designu. Wymarzony projekt to taki, który będzie zawierał designerów, z którymi będę mógł współpracować, aby stworzyć coś wyjątkowego."
@@ -44,7 +47,7 @@
   "about": {
     "typescript": "Wielki fan TypeScript, który wykorzystałem w wielu projektach komercyjnych zarówno na FrontEndzie jak i BackEndzie. W projekcie klasy ERP przekształciłem cały projekt z JavaScript na TypeScript.",
     "oauth": "We wszystkich komercyjnych projektach wykorzystywałem OAuth2 do autoryzacji użytkowników. Zarówno od strony frontendu jak i backendu. W projekcie klasy ERP integrowałem różne systemy SSO min. CAS, oraz 2FA jak Google Authenticator.",
-      "nextjs": "Najnowszy romans, który czuje, że będzie trwał długo. Ta strona jest właśnie zbudowana w Next.js.",
+    "nextjs": "Najnowszy romans, który czuje, że będzie trwał długo. Ta strona jest właśnie zbudowana w Next.js.",
     "frontend": {
       "angular": "Wieloletnie doświadczenie w pracy z Angular już od wersji 10. Rozwijałem projekt klasy ERP, który przekształciłem z Module-Based na Standalone Components (Skala ponad 4000 modułów). Obecnie projekt posiada kilka tysięcy komponentów, które z sukcesem przeniosłem do nowego MDC.",
       "javascript": "Rodzic języków FrontEndowych, który wykorzystałem w wielu projektach komercyjnych. Mimo że TypeScript jest moim ulubionym językiem, to JavaScript jest językiem, który mnie wychował (No może bardziej ten lepszy rodzic bo pierwszy to C++).",
@@ -61,7 +64,7 @@
       "css": "Jak kochać design i nie kochać CSS? Lubie go pisać w SCSS, choć obecnie Tailwind w dużej części mnie wyręcza."
     },
     "backend": {
-      "laravel": "Doświadczenie w pracy z Laravel, który wykorzystałem do stworzenia API dla projektu klasy ERP. Skala projektu przyniosła wiele wyzwań, które przekształciły mnie w doświadczonego developera (Ponad 2000 endpointów). W Laravel tworzyłem również ciekawy projekt to realizacji Erasmus Without Network (EWP), który był oparty o rozproszoną sieć API z uwzględnieniem zaawansowanych technologii szyfrowania i transformacji XSL",
+      "laravel": "Doświadczenie w pracy z Laravel, który wykorzystałem do stworzenia API dla projektu klasy ERP. Skala projektu przyniosła wiele wyzwań, które przekształciły mnie w doświadczonego developera (Ponad 2000 endpointów). W Laravel tworzyłem również ciekawy projekt, integracja z Erasmus Without Network (EWP), który był oparty o rozproszoną sieć API z uwzględnieniem zaawansowanych technologii szyfrowania i transformacji XSL",
       "payments": "W projektach komercyjnych integrowałem systemy płatności, takie jak Przelewy24, Stripe.",
       "fastapi": "Ostatnie projekty pozwoliły mi na zdobycie doświadczenia w pracy z FastAPI, który wykorzystałem do komercyjnych projektów AI jak AI Chat.",
       "sql": "Doświadczenie w pracy z bazami danych, takimi jak PostgreSQL, MySQL, SQLite, MSSQL. W projekcie klasy ERP wykorzystałem OpenEdge Progress połączony po ODBC. W projekcie AI Chat wykorzystałem MongoDB.",
@@ -71,6 +74,29 @@
       "nodejs": "Doświadczenie w pracy z Node.js, który wykorzystałem w kilku projektach komercyjnych. Przy pomocy biblioteki zx przepisałem wiele skryptów w projektach.",
       "nestjs": "Polski framework, który z dumą obserwuje jak rośnie. Życzyłbym sobie więcej projektów, w których mógłbym go wykorzystać.",
       "cakephp": "Doświadczenie w pracy z CakePHP."
+    }
+  },
+  "projects": {
+    "foodtrack": {
+      "description": "Aplikacja pozwalająca lokalizować Twoje ulubione Food Trucki."
+    },
+    "server_manager": {
+      "description": "System do zdalnego nadzoru urządzeń. Zaprojektowany z myślą o IoT."
+    },
+    "niebodowynajecia": {
+      "description": "Strona internetowa popularyzatora astronomii prowadzącego swoje mobilne planetarium \"Niebo do wynajęcia\"."
+    },
+    "ipagro": {
+      "description": "Strona e-commerce. Sprzedaż i wynajem sprzętu budowlanego i rolniczego."
+    },
+    "localvideoplayer": {
+      "description": "Odtwarzacz lokalnych plików video. Obsługuje duże pliki oraz playlistę."
+    },
+    "porfoliov1": {
+      "description": "Moje pierwsze portfolio. Zbudowane w Vue."
+    },
+    "porfoliov2": {
+      "description": "Obecne portfolio. Zbudowane w Next.js."
     }
   },
   "mail": {

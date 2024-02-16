@@ -1,28 +1,32 @@
 export interface Project {
     title: string;
     description?: string;
+    link?: string;
+    github?: string;
     technologies?: string[];
 }
 
 export const ProjectsData: Project[] = [
     {
         title: "FoodTrack",
-        description: "projects.porfoliov1.description",
+        description: "projects.foodtrack.description",
         technologies: ["Vue", "Vuetify", "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", "Bcrypt"],
     },
     {
         title: "Server Manager",
-        description: "projects.porfoliov1.description",
+        description: "projects.server_manager.description",
         technologies: ["Vue", "Vuetify", "Laravel", "Eloquent ORM", "PostgreSQL", "JWT"],
     },
     {
         title: "Niebo Do Wynajęcia",
         description: "projects.niebodowynajecia.description",
+        link: "https://niebo-do-wynajecia.pl",
         technologies: ["WordPress", "PHP", "MySQL", "Yoast SEO", "Google Analytics", "Google Search Console", "Google My Buisness"],
     },
     {
         title: "IpAgro",
         description: "projects.ipagro.description",
+        link: "https://ipagro.pl",
         technologies: ["WordPress", "WooCommerce", "PHP", "MySQL", "Yoast SEO", "Google Analytics", "Google Search Console", "Google My Buisness"],
     },
     {
@@ -33,6 +37,7 @@ export const ProjectsData: Project[] = [
     {
         title: "Porfolio v2",
         description: "projects.porfoliov2.description",
+        link: "https://zurekpiotr.pl",
         technologies: ["Next.js", "React", "Tailwind", "i18n", "Figma"],
     },
     {

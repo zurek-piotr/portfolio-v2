@@ -3,11 +3,15 @@
 import {cn} from "@/lib/utils";
 import Image from "next/image";
 import {Badge} from "@/components/ui/badge";
-import React, {useEffect, useRef} from "react";
+import React, {useEffect, useRef, useState} from "react";
+import {Project} from "@/components/project-item/projects-data";
+import {getTranslation, useTranslations} from "@/contexts/translations-context";
+import Link from "next/link";
+import {buttonVariants} from "@/components/ui/button";
+import {IconLink} from "@tabler/icons-react";
 
-export default function ProjectItem({projectName, projectDescription, src, alt, fill, sizes, technologies, rootClassName, imageClassName}: {
-    projectName: string,
-    projectDescription: string,
+export default function ProjectItem({project, src, alt, fill, sizes, technologies, rootClassName, imageClassName}: {
+    project: Project,
     src: string,
     alt: string,
     fill: boolean,
@@ -17,7 +21,8 @@ export default function ProjectItem({projectName, projectDescription, src, alt, 
     imageClassName?: string
 
 }) {
-    const [open, setOpen] = React.useState(false)
+    const {translations: t} = useTranslations()
+    const [open, setOpen] = useState(false)
     const ref = useRef<any>(null);
 
     useEffect(() => {
@@ -50,8 +55,8 @@ export default function ProjectItem({projectName, projectDescription, src, alt, 
                 "flex flex-col justify-end gap-3 md:gap-5 visible",
                 open && "opacity-100",
             )}>
-                <h3 className={"font-bold text-xl pb-1 md:text-5xl md:pb-4"}>{projectName}</h3>
-                <p className={"text-justify text-wrap break-words whitespace-pre-line"}>{projectDescription}</p>
+                <h3 className={"font-bold text-xl pb-1 md:text-5xl md:pb-4"}>{project?.title}</h3>
+                <p className={"text-justify text-wrap break-words whitespace-pre-line"}>{project?.description ? getTranslation(t, project.description) : ""}</p>
                 {
                     technologies && (
                         <div className={"flex flex-row flex-wrap gap-2 py-1 md:py-3"}>
@@ -67,6 +72,17 @@ export default function ProjectItem({projectName, projectDescription, src, alt, 
                         </div>
                     )
                 }
+                <div className={"flex "}>
+                    {project?.link && (
+                        <Link href={project.link} className={cn(
+                            buttonVariants({variant: "ghost"}),
+                            "text-lg"
+                        )} title={getTranslation(t, "project.link")}>
+                            <IconLink className={"size-10 pr-3"} /> {getTranslation(t, "project.link")}
+                        </Link>
+                    )}
+                </div>
+
             </div>
         </div>
     )
