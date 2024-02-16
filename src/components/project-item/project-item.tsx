@@ -10,10 +10,8 @@ import Link from "next/link";
 import {buttonVariants} from "@/components/ui/button";
 import {IconLink} from "@tabler/icons-react";
 
-export default function ProjectItem({project, src, alt, fill, sizes, technologies, rootClassName, imageClassName}: {
+export default function ProjectItem({project, fill, sizes, technologies, rootClassName, imageClassName}: {
     project: Project,
-    src: string,
-    alt: string,
     fill: boolean,
     sizes: string,
     technologies?: string[],
@@ -42,8 +40,8 @@ export default function ProjectItem({project, src, alt, fill, sizes, technologie
         <div className={cn("absolute top-0 left-0 w-full h-full group object-cover overflow-hidden rounded-xl", rootClassName)} onClick={() => setOpen(!open)} ref={ref}>
             <Image
                 className={cn("object-cover", imageClassName)}
-                src={src}
-                alt={alt}
+                src={project?.src || "/images/sample-site-gif.gif"}
+                alt={project.title}
                 fill={fill}
                 sizes={sizes}
                 priority={true}

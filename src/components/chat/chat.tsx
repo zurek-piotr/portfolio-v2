@@ -8,7 +8,7 @@ import {IconX} from "@tabler/icons-react";
 import {Button} from "@/components/ui/button";
 import Message, {MessageVariant} from "@/components/chat/components/message";
 import {useEffect, useRef, useState} from "react";
-import {useRouter} from "next/navigation";
+import {usePathname, useRouter} from "next/navigation";
 import {getMailTo} from "@/components/hire-me-button/utils";
 
 export interface ChatMessage {
@@ -23,6 +23,7 @@ export function Chat() {
     const delay: number = 600;
     const chatWrapperRef = useRef<HTMLDivElement>(null);
     const {isOpenChat, setIsOpenChat} = useIsOpenChat();
+    const pathname: string = usePathname();
 
     const [timeouts, setTimeouts] = useState<NodeJS.Timeout[]>([]);
 
@@ -125,9 +126,23 @@ export function Chat() {
     function goToProjects(message: ChatMessage) {
         addOptionToVisibleMessages(message)
 
-        addTimeout(() => {
-            push(`/${currentLanguage}/projects`, {scroll: false});
-        }, delay);
+        if(pathname === `/${currentLanguage}/projects`) {
+            addVisibleMessage({
+                variant: "system",
+                text: getTranslation(t, "chat.projects.already_on_page")
+            }, 1);
+            addVisibleMessage({
+                variant: "system",
+                text: getTranslation(t, "chat.Can_I_help_you_with_anything_else")
+            }, 2);
+            addTimeout(() => {
+                showInitialOptionsOptions();
+            }, 2 * delay);
+        } else {
+            addTimeout(() => {
+                push(`/${currentLanguage}/projects`, {scroll: false});
+            }, delay);
+        }
     }
 
     function hireAction(message: ChatMessage) {
@@ -179,7 +194,6 @@ export function Chat() {
             variant: "system",
             text: getTranslation(t, "chat.Can_I_help_you_with_anything_else")
         }, 3);
-
         addTimeout(() => {
             showInitialOptionsOptions();
         }, 3 * delay);
@@ -196,7 +210,6 @@ export function Chat() {
             variant: "system",
             text: getTranslation(t, "chat.Can_I_help_you_with_anything_else")
         }, 3);
-
         addTimeout(() => {
             showInitialOptionsOptions();
         }, 3 * delay);

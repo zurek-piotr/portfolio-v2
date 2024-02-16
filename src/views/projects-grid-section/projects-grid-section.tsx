@@ -25,8 +25,6 @@ export default function ProjectsGridSection({translations, currentLanguage}: {
                                 className={"relative h-96 2xl:h-[30rem] object-cover overflow-hidden rounded-xl"}>
                                 <ProjectItem
                                     project={project}
-                                    src={"/images/sample-site-gif.gif"}
-                                    alt={"Sample site gif"}
                                     fill={true}
                                     sizes={"(max-width: 768px) 100vw, 50vw"}
                                     technologies={project.technologies}

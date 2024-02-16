@@ -1,6 +1,7 @@
 export interface Project {
     title: string;
     description?: string;
+    src?: string;
     link?: string;
     github?: string;
     technologies?: string[];
@@ -21,6 +22,7 @@ export const ProjectsData: Project[] = [
         title: "Niebo Do Wynajęcia",
         description: "projects.niebodowynajecia.description",
         link: "https://niebo-do-wynajecia.pl",
+        src: "/gifs/niebodowynajecia.gif",
         technologies: ["WordPress", "PHP", "MySQL", "Yoast SEO", "Google Analytics", "Google Search Console", "Google My Buisness"],
     },
     {

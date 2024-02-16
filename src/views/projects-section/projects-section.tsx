@@ -3,7 +3,7 @@
 import {cn} from "@/lib/utils";
 import {Translations, TranslationsContext} from "@/contexts/translations-context";
 import {Carousel, CarouselApi, CarouselContent, CarouselItem} from "@/components/ui/carousel/carousel";
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import {Card, CardContent} from "@/components/ui/card";
 import ProjectsData, {Project} from "@/components/project-item/projects-data";
 import ProjectItem from "@/components/project-item/project-item";
@@ -64,8 +64,6 @@ export default function ProjectsSection({translations, currentLanguage}: {
                                     )}>
                                         <ProjectItem
                                             project={project}
-                                            src={"/images/sample-site-gif.gif"}
-                                            alt={"Sample site gif"}
                                             fill={true}
                                             sizes={"(max-width: 768px) 100vw, 50vw"}
                                             technologies={project.technologies}

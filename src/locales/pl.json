@@ -128,6 +128,7 @@
     },
     "projects": {
       "message": "Cieszę się, że chcesz zobaczyć moje projekty. Chodź i zobacz!",
+      "already_on_page": "Już jesteś na stronie z moimi projektami.",
       "take_me": "\uD83C\uDFCE\uFE0F Zabierz mnie tam!"
     },
     "Back_to_other_options": "\uD83D\uDD19 Wróć do innych opcji",

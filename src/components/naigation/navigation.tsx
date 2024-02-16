@@ -20,7 +20,7 @@ export default function Navigation({translations, currentLanguage}: {
 }) {
     const [hasBackground, setHasBackground] = useState(false);
     const buttonClasses: string = "text-xs md:text-sm lg:text-base rounded-full";
-    const pathname = usePathname();
+    const pathname: string = usePathname();
     const [isOpenChat, setIsOpenChat] = useState(false);
 
     const onScroll = useCallback(() => {
