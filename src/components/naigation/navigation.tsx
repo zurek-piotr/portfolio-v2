@@ -19,7 +19,7 @@ export default function Navigation({translations, currentLanguage}: {
     currentLanguage: string
 }) {
     const [hasBackground, setHasBackground] = useState(false);
-    const buttonClasses: string = "text-xs md:text-sm lg:text-base rounded-full";
+    const buttonClasses: string = "text-xs md:text-sm lg:text-base font-bold rounded-full z-[50]";
     const pathname: string = usePathname();
     const [isOpenChat, setIsOpenChat] = useState(false);
 
@@ -78,7 +78,7 @@ export default function Navigation({translations, currentLanguage}: {
         <TranslationsContext.Provider value={{translations, currentLanguage}}>
             <IsOpenChatProvider setIsOpenChat={setIsOpenChat} isOpenChat={isOpenChat}>
                 <nav className={cn(
-                    "max-md:hidden w-full fixed z-40 gap-1 top-12 px-4",
+                    "max-md:hidden w-full fixed z-[49] gap-1 top-12 px-4 ",
                 )}>
                     {toggles}
 
@@ -86,7 +86,7 @@ export default function Navigation({translations, currentLanguage}: {
                         className={cn(
                             "flex flex-row flex-nowrap items-center justify-center",
                             "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2",
-                            "z-50 -top-3",
+                            "z-[50] -top-3",
                             "px-2 py-1 rounded-full",
                             "transition ease-in-out delay-75 duration-300",
                             "motion-reduce:transition-none",
@@ -97,25 +97,25 @@ export default function Navigation({translations, currentLanguage}: {
                             "max-md:hidden bg-transparent text-foreground mr-3 p-3 py-4 font-extralight",
                             "hover:bg-accent hover:border-accent hover:text-accent-foreground border-foreground/30",
                         )}/>
-                        {buttons}
-                    </div>
+                            {buttons}
+                        </div>
                 </nav>
 
                 <>
-                    <nav className={cn(
-                        "md:hidden w-full fixed z-40 gap-1 top-10 px-4",
+            <nav className={cn(
+                        "md:hidden w-full fixed z-[49] gap-1 top-10 px-4",
                     )}>
                         {toggles}
                     </nav>
 
                     <nav className={cn(
-                        "md:hidden w-full fixed z-40 gap-1",
+                        "md:hidden w-full fixed z-[49] gap-1",
                         "bottom-0.5",
                     )}>
                         <div
                             className={cn(
                                 "flex flex-row flex-nowrap items-center justify-center",
-                                "z-50 flex flex-row flex-nowrap items-center",
+                                "z-[50] flex flex-row flex-nowrap items-center",
                                 "px-2 py-1 rounded-full",
                                 styles.background
                             )}>
@@ -125,6 +125,7 @@ export default function Navigation({translations, currentLanguage}: {
                 </>
 
                 <Chat/>
+
             </IsOpenChatProvider>
         </TranslationsContext.Provider>
     )

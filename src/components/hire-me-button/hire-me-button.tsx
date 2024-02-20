@@ -35,7 +35,7 @@ export function HireMeButton({linkClassName, iconClassName, className, innerRef,
                     )}
                     stroke={2}
                 />
-                <p className={"font-bold -ml-0.5 group-hover:text-accent-foreground"}>{t?.Hire_me}</p>
+                <p className={"font-extrabold -ml-0.5 group-hover:text-accent-foreground"}>{t?.Hire_me}</p>
             </Button>
         </Link>
     )

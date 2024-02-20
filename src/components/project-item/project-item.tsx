@@ -39,7 +39,7 @@ export default function ProjectItem({project, fill, sizes, technologies, rootCla
     return (
         <div className={cn("absolute top-0 left-0 w-full h-full group object-cover overflow-hidden rounded-xl", rootClassName)} onClick={() => setOpen(!open)} ref={ref}>
             <Image
-                className={cn("object-cover", imageClassName)}
+                className={cn("object-cover z-[11]", imageClassName)}
                 src={project?.src || "/images/sample-site-gif.gif"}
                 alt={project.title}
                 fill={fill}
@@ -47,7 +47,7 @@ export default function ProjectItem({project, fill, sizes, technologies, rootCla
                 priority={true}
             />
             <div className={cn(
-                "w-full h-full p-4 md:p-10 pb-5 top-0 left-0 absolute opacity-0",
+                "w-full h-full p-4 md:p-10 pb-5 top-0 left-0 absolute opacity-0 z-[11]",
                 "group-focus:opacity-100 group-active:opacity-100 group-hover:opacity-100 transition duration-300 ease-in-out ",
                 "bg-background/80 backdrop-blur-lg backdrop-filter",
                 "flex flex-col justify-end gap-3 md:gap-5 visible",

@@ -41,7 +41,7 @@ export default function ProjectsSection({translations, currentLanguage}: {
                         loop: true,
                         align: "center",
                     }}
-                    className={"w-full"}
+                    className={"w-full z-[11]"}
                 >
                     <CarouselContent className={cn("w-full items-center")}>
                         {ProjectsData.map((project: Project, index: number) => (
@@ -50,7 +50,7 @@ export default function ProjectsSection({translations, currentLanguage}: {
                                 key={index}
                                 className={cn(
                                     "basis-3/4 md:basis-7/12 2xl:basis-1/2 p-0 rounded-xl",
-                                    index === current && "z-10 my-5 shadow-lg -mx-1"
+                                    index === current && "z-[12] my-5 shadow-lg -mx-1"
                                 )}
                             >
                                 <Card className={cn(
