@@ -8,16 +8,16 @@ export interface Project {
 }
 
 export const ProjectsData: Project[] = [
-    {
-        title: "FoodTrack",
-        description: "projects.foodtrack.description",
-        technologies: ["Vue", "Vuetify", "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", "Bcrypt"],
-    },
-    {
-        title: "Server Manager",
-        description: "projects.server_manager.description",
-        technologies: ["Vue", "Vuetify", "Laravel", "Eloquent ORM", "PostgreSQL", "JWT"],
-    },
+    // {
+    //     title: "FoodTrack",
+    //     description: "projects.foodtrack.description",
+    //     technologies: ["Vue", "Vuetify", "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", "Bcrypt"],
+    // },
+    // {
+    //     title: "Server Manager",
+    //     description: "projects.server_manager.description",
+    //     technologies: ["Vue", "Vuetify", "Laravel", "Eloquent ORM", "PostgreSQL", "JWT"],
+    // },
     {
         title: "Niebo Do Wynajęcia",
         description: "projects.niebodowynajecia.description",
@@ -41,13 +41,14 @@ export const ProjectsData: Project[] = [
     },
     {
         title: "Porfolio v2",
-        description: "projects.porfoliov2.description",
+        description: "projects.portfoliov2.description",
         link: "https://zurekpiotr.pl",
+        src: "/gifs/portfoliov2.gif",
         technologies: ["Next.js", "React", "Tailwind", "i18n", "Figma"],
     },
     {
         title: "Porfolio v1",
-        description: "projects.porfoliov1.description",
+        description: "projects.portfoliov1.description",
         link: "https://zurekpiotr-portoflio-v1.vercel.app",
         src: "/gifs/portfoliov1.gif",
         technologies: ["Vue", "Vuelidate", "SCSS", "Figma", "i18n", "Google Apps Mail"],

@@ -7,6 +7,7 @@ import React, {useEffect, useState} from "react";
 import {Card, CardContent} from "@/components/ui/card";
 import ProjectsData, {Project} from "@/components/project-item/projects-data";
 import ProjectItem from "@/components/project-item/project-item";
+import {AspectRatio} from "@/components/ui/aspect-ratio";
 
 export default function ProjectsSection({translations, currentLanguage}: {
     translations: Translations,
@@ -57,17 +58,20 @@ export default function ProjectsSection({translations, currentLanguage}: {
                                     "border-0 bg-accent",
                                     index === current && "bg-primary"
                                 )}>
-                                    <CardContent className={cn(
-                                        "relative object-cover overflow-hidden rounded-xl",
-                                        "flex h-80",
-                                        index === current && "h-96"
-                                    )}>
-                                        <ProjectItem
-                                            project={project}
-                                            fill={true}
-                                            sizes={"(max-width: 768px) 100vw, 50vw"}
-                                            technologies={project.technologies}
-                                        />
+                                    <CardContent className={cn("p-0")}>
+                                        <AspectRatio ratio={16 / 9}
+                                                     className={cn(
+                                                         "relative object-cover overflow-hidden rounded-xl",
+                                                         index === current && "scale-105"
+                                                     )}
+                                        >
+                                            <ProjectItem
+                                                project={project}
+                                                fill={true}
+                                                sizes={"(max-width: 768px) 100vw, 50vw"}
+                                                technologies={project.technologies}
+                                            />
+                                        </AspectRatio>
                                     </CardContent>
                                 </Card>
                             </CarouselItem>

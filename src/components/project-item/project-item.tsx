@@ -37,7 +37,9 @@ export default function ProjectItem({project, fill, sizes, technologies, rootCla
     }, [ref]);
 
     return (
-        <div className={cn("absolute top-0 left-0 w-full h-full group object-cover overflow-hidden rounded-xl", rootClassName)} onClick={() => setOpen(!open)} ref={ref}>
+        <div
+            className={cn("absolute top-0 left-0 w-full h-full group object-cover overflow-hidden rounded-xl", rootClassName)}
+            onClick={() => setOpen(!open)} ref={ref}>
             <Image
                 className={cn("object-cover z-[11]", imageClassName)}
                 src={project?.src || "/images/sample-site-gif.gif"}
@@ -47,12 +49,13 @@ export default function ProjectItem({project, fill, sizes, technologies, rootCla
                 priority={true}
             />
             <div className={cn(
-                "w-full h-full p-4 md:p-10 pb-5 top-0 left-0 absolute opacity-0 z-[11]",
+                "w-full h-full p-4 md:p-10 pb-5 top-0 left-0 absolute opacity-0 z-[12] visible",
                 "group-focus:opacity-100 group-active:opacity-100 group-hover:opacity-100 transition duration-300 ease-in-out ",
                 "bg-background/80 backdrop-blur-lg backdrop-filter",
-                "flex flex-col justify-end gap-3 md:gap-5 visible",
+                "flex",
                 open && "opacity-100",
             )}>
+                <div className={"overflow-y-auto min-h-full w-full flex flex-grow flex-col gap-3 md:gap-5 md:justify-end md:overflow-hidden"}>
                 <h3 className={"font-bold text-xl pb-1 md:text-5xl md:pb-4"}>{project?.title}</h3>
                 <p className={"text-justify text-wrap break-words whitespace-pre-line"}>{project?.description ? getTranslation(t, project.description) : ""}</p>
                 {
@@ -76,11 +79,11 @@ export default function ProjectItem({project, fill, sizes, technologies, rootCla
                             buttonVariants({variant: "ghost"}),
                             "text-lg"
                         )} title={getTranslation(t, "project.link")}>
-                            <IconLink className={"size-10 pr-3"} /> {getTranslation(t, "project.link")}
+                            <IconLink className={"size-10 pr-3"}/> {getTranslation(t, "project.link")}
                         </Link>
                     )}
                 </div>
-
+                </div>
             </div>
         </div>
     )

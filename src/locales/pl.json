@@ -92,10 +92,10 @@
     "localvideoplayer": {
       "description": "Odtwarzacz lokalnych plików video. Obsługuje duże pliki oraz playlistę."
     },
-    "porfoliov1": {
+    "portfoliov1": {
       "description": "Moje pierwsze portfolio. Zbudowane w Vue."
     },
-    "porfoliov2": {
+    "portfoliov2": {
       "description": "Obecne portfolio. Zbudowane w Next.js."
     }
   },
