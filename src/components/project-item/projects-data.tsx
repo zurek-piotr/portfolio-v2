@@ -54,7 +54,7 @@ export const ProjectsData: Project[] = [
     {
         title: "Porfolio v1",
         description: "projects.portfoliov1.description",
-        link: "https://zurekpiotr-portoflio-v1.vercel.app",
+        link: "https://zurekpiotr-portfolio-v1.vercel.app",
         src: "/gifs/portfoliov1.gif",
         technologies: ["Vue", "Vuelidate", "SCSS", "Figma", "i18n", "Google Apps Mail"],
     },

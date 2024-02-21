@@ -1,7 +1,7 @@
 "use client"
 
 import {Context, createContext, ReactNode, useContext} from 'react';
-import useMediaQuery from "@/app/hooks/use-media-query";
+import useMediaQuery from "@/hooks/use-media-query";
 
 
 export const IsDesktopContext: Context<boolean> = createContext<boolean>(false);
