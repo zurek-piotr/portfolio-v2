@@ -50,7 +50,7 @@ export default function ProjectsSection({translations, currentLanguage}: {
                             <CarouselItem
                                 key={index}
                                 className={cn(
-                                    "basis-3/4 md:basis-7/12 2xl:basis-1/2 p-0 rounded-xl",
+                                    "basis-3/4 md:basis-7/12 2xl:basis-1/2 p-0 rounded-xl cursor-grab",
                                     index === current && "z-[12] my-5 shadow-lg -mx-1"
                                 )}
                             >

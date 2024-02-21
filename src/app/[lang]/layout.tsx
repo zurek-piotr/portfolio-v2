@@ -6,7 +6,7 @@ import {i18n, Locale} from '@/i18n.config'
 import {GoogleAnalytics} from '@next/third-parties/google'
 import React from "react";
 
-const font = Nunito({subsets: ["latin"]});
+const font = Nunito({subsets: ["latin"], display: "swap"});
 
 export const metadata: Metadata = {
     title: "Portfolio | Piotr Żurek",

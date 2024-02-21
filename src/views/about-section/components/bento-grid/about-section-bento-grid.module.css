@@ -1,0 +1,56 @@
+@keyframes bgAnimation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+.section::before,
+.section::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+}
+
+.section::before {
+    background-image: radial-gradient(
+            circle,
+            hsl(var(--accent)),
+            transparent,
+            transparent
+    );
+    background-size: 400%;
+    animation: bgAnimation 25s infinite alternate;
+    z-index: -1;
+    mix-blend-mode: soft-light;
+}
+
+.section::after {
+    background-image: linear-gradient(
+            to bottom,
+            hsl(var(--primary)),
+            hsl(var(--background))
+    );
+    z-index: -2;
+}
+
+@keyframes handScroll {
+    0% {
+        transform: translateY(0) rotate(-45deg);
+    }
+    50% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(0) rotate(30deg);
+    }
+}
+
+.handIcon {
+    animation: handScroll 1s infinite alternate;
+}

@@ -54,7 +54,6 @@ export default function Navigation({translations, currentLanguage}: {
                 pathname === `/${currentLanguage}` && "bg-accent/50"
             )}
             href={`/${currentLanguage}`}
-            scroll={false}
         >
             {translations?.About}
         </Link>
@@ -65,7 +64,6 @@ export default function Navigation({translations, currentLanguage}: {
                 pathname === `/${currentLanguage}/projects` && "bg-accent/50"
             )}
             href={`/${currentLanguage}/projects`}
-            scroll={false}
         >
             {translations?.Projects}
         </Link>

@@ -110,6 +110,7 @@
   "chat": {
     "title": "Bot Piotr",
     "Lets_talk": "Porozmawiajmy!",
+    "close": "Zamknij",
     "Hi": "Cześć!",
     "welcome_message": "Jestem botem, który pomoże Ci dowiedzieć się więcej o mnie.",
     "How_can_I_help_you_today": "Jak mogę Ci dzisiaj pomóc?",

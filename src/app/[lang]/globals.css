@@ -86,7 +86,7 @@ body::after {
 /*}*/
 
 body::before {
-  background-image: url('/images/noise.gif');
+  background-image: url('/images/noise.webp');
   background-size: 120px;
   opacity: calc(25 / 100);
 }

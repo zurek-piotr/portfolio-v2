@@ -42,7 +42,7 @@ export default function ProjectItem({project, fill, sizes, technologies, rootCla
             onClick={() => setOpen(!open)} ref={ref}>
             <Image
                 className={cn("object-cover z-[11]", imageClassName)}
-                src={project?.src || "/gifs/portfoliov2.gif"}
+                src={project?.src || "/gifs/portfoliov2.webp"}
                 alt={project.title}
                 fill={fill}
                 sizes={sizes}

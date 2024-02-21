@@ -3,6 +3,7 @@
 import styles from "./bento-grid-flip-card.module.css";
 import {cn} from "@/lib/utils";
 import React from "react";
+import {IconArrowBack} from "@tabler/icons-react";
 
 export default function BentoGridFlipCard(
     {
@@ -32,6 +33,7 @@ export default function BentoGridFlipCard(
                 <div className={cn(styles.flipCardBack, frontBackClassName, backClassName)}>
                     {backChildren}
                 </div>
+                <IconArrowBack className={cn("absolute bottom-0 right-0 w-8 h-8 p-2 text-muted/30 size-8")} stroke={1} />
             </div>
         </div>
     )

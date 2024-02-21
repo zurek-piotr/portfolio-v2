@@ -38,7 +38,7 @@ export default function BentoGridCarousel({title, carouselData}: { title: string
                 <CarouselContent className={cn("w-full", carouselBasis)}>
                     {
                         carouselData.map((item: CarouselElement, index: number) => (
-                            <CarouselItem key={index}>
+                            <CarouselItem className={"cursor-grab"} key={index}>
                                 <DrawerPopover
                                     title={item?.title}
                                     body={item?.body ? getTranslation(t, item.body) : undefined}
@@ -48,7 +48,7 @@ export default function BentoGridCarousel({title, carouselData}: { title: string
                                     }
 
                                     {item?.imageSrc &&
-                                        <div className={cn(imageClasses)}>
+                                        <div className={cn(imageClasses, "cursor-pointer")}>
                                             <Image
                                                 src={item.imageSrc}
                                                 alt={item.title}

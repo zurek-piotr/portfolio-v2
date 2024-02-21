@@ -140,7 +140,7 @@ export function Chat() {
             }, 2 * delay);
         } else {
             addTimeout(() => {
-                push(`/${currentLanguage}/projects`, {scroll: false});
+                push(`/${currentLanguage}/projects`);
             }, delay);
         }
     }
@@ -296,7 +296,7 @@ export function Chat() {
                     <span className={"text-muted dark:text-primary-foreground"}>{getTranslation(t, "chat.Lets_talk")}</span>
                 </div>
 
-                <Button className={"absolute top-2 right-2 rounded-full"} variant={"ghost"}
+                <Button className={"absolute top-2 right-2 rounded-full"} variant={"ghost"} title={getTranslation(t, "chat.close")}
                         onClick={() => setIsOpenChat(false)}>
                     <IconX/>
                 </Button>

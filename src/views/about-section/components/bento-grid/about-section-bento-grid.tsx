@@ -2,13 +2,14 @@
 
 import {getTranslation, TranslationsContextProps, useTranslations} from "@/contexts/translations-context";
 import {cn} from "@/lib/utils";
-import {IconBolt, IconBrandOpenai, IconBrandTeams, IconPalette, IconTools} from "@tabler/icons-react";
+import {IconBolt, IconBrandOpenai, IconBrandTeams, IconHandMove, IconPalette, IconTools} from "@tabler/icons-react";
 import Face from "@/components/face/face";
 import BentoGridCarousel from "@/views/about-section/components/bento-grid/components/bento-grid-carousel";
 import {BackendData, FrontendData} from "@/views/about-section/components/bento-grid/components/carousel-data";
 import BentoGridFlipCard from "@/views/about-section/components/bento-grid/components/flip-card/bento-grid-flip-card";
 import Image from "next/image";
 import React from "react";
+import styles from "./about-section-bento-grid.module.css";
 
 export default function AboutSectionBentoGrid({className}: { className?: string }) {
     const {translations: t}: TranslationsContextProps = useTranslations();
@@ -26,6 +27,7 @@ export default function AboutSectionBentoGrid({className}: { className?: string 
         )}>
             <div className={cn(outlineVariant, "border-accent text-accent", "sm:col-span-2", "text-6xl")}>
                 <BentoGridCarousel title={"FrontEnd"} carouselData={FrontendData}/>
+                <IconHandMove className={cn(styles.handIcon, "size-6 -rotate-45")} stroke={1}/>
             </div>
 
             <BentoGridFlipCard
@@ -178,6 +180,7 @@ export default function AboutSectionBentoGrid({className}: { className?: string 
                 "dark:text-secondary",
             )}>
                 <BentoGridCarousel title={"BackEnd"} carouselData={BackendData}/>
+                <IconHandMove className={cn(styles.handIcon, "size-6 -rotate-45")} stroke={1}/>
             </div>
 
             <BentoGridFlipCard
