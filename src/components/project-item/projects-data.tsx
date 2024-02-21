@@ -33,12 +33,14 @@ export const ProjectsData: Project[] = [
     {
         title: "FoodTrack",
         description: "projects.foodtrack.description",
+        src: "/gifs/foodtrack.gif",
         technologies: ["Vue", "Vuetify", "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", "Bcrypt"],
         underConstruction: true,
     },
     {
-        title: "Server Manager",
+        title: "IoT Manager",
         description: "projects.server_manager.description",
+        src: "/gifs/server_manager.gif",
         technologies: ["Vue", "Vuetify", "Laravel", "Eloquent ORM", "PostgreSQL", "JWT"],
         underConstruction: true,
     },
