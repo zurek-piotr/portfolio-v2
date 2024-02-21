@@ -42,7 +42,7 @@ export default function ProjectItem({project, fill, sizes, technologies, rootCla
             onClick={() => setOpen(!open)} ref={ref}>
             <Image
                 className={cn("object-cover z-[11]", imageClassName)}
-                src={project?.src || "/images/sample-site-gif.gif"}
+                src={project?.src || "/gifs/portfoliov2.gif"}
                 alt={project.title}
                 fill={fill}
                 sizes={sizes}
@@ -55,34 +55,45 @@ export default function ProjectItem({project, fill, sizes, technologies, rootCla
                 "flex",
                 open && "opacity-100",
             )}>
-                <div className={"overflow-y-auto min-h-full w-full flex flex-grow flex-col gap-3 md:gap-5 md:justify-end md:overflow-hidden"}>
-                <h3 className={"font-bold text-xl pb-1 md:text-5xl md:pb-4"}>{project?.title}</h3>
-                <p className={"text-justify text-wrap break-words whitespace-pre-line"}>{project?.description ? getTranslation(t, project.description) : ""}</p>
-                {
-                    technologies && (
-                        <div className={"flex flex-row flex-wrap gap-2 py-1 md:py-3"}>
-                            {
-                                technologies.map((technology, index) => (
-                                    <Badge
-                                        className={"rounded-full"}
-                                        key={index}
-                                        variant={"outline"}
-                                    >{technology}</Badge>
-                                ))
-                            }
-                        </div>
-                    )
-                }
-                <div className={"flex "}>
-                    {project?.link && (
-                        <Link href={project.link} className={cn(
-                            buttonVariants({variant: "ghost"}),
-                            "text-lg"
-                        )} title={getTranslation(t, "project.link")}>
-                            <IconLink className={"size-10 pr-3"}/> {getTranslation(t, "project.link")}
-                        </Link>
-                    )}
-                </div>
+                <div
+                    className={"overflow-y-auto min-h-full w-full flex flex-grow flex-col gap-3 md:gap-5 md:justify-end md:overflow-hidden"}>
+                    <h3 className={"font-bold text-xl pb-1 md:text-5xl md:pb-4"}>{project?.title}</h3>
+                    <p className={"text-justify text-wrap break-words whitespace-pre-line"}>{project?.description ? getTranslation(t, project.description) : ""}</p>
+                    {
+                        technologies && (
+                            <div className={"flex flex-row flex-wrap gap-2 py-1 md:py-3"}>
+                                {
+                                    technologies.map((technology, index) => (
+                                        <Badge
+                                            className={"rounded-full"}
+                                            key={index}
+                                            variant={"outline"}
+                                        >{technology}</Badge>
+                                    ))
+                                }
+                            </div>
+                        )
+                    }
+                    <div className={"flex "}>
+                        {project?.link && (
+                            <Link href={project.link} className={cn(
+                                buttonVariants({variant: "ghost"}),
+                                "text-lg rounded-full"
+                            )} title={getTranslation(t, "project.link")}>
+                                <IconLink className={"size-10 pr-3"}/> {getTranslation(t, "project.link")}
+                            </Link>
+                        )}
+                        {
+                            project?.underConstruction && (
+                                <Badge
+                                    className={"rounded-full text-base py-2 px-5"}
+                                    variant={"default"} title={getTranslation(t, "project.under_construction")}
+                                >
+                                    {getTranslation(t, "project.under_construction")}
+                                </Badge>
+                            )
+                        }
+                    </div>
                 </div>
             </div>
         </div>

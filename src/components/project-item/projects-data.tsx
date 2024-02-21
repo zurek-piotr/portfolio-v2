@@ -5,19 +5,10 @@ export interface Project {
     link?: string;
     github?: string;
     technologies?: string[];
+    underConstruction?: boolean,
 }
 
 export const ProjectsData: Project[] = [
-    // {
-    //     title: "FoodTrack",
-    //     description: "projects.foodtrack.description",
-    //     technologies: ["Vue", "Vuetify", "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", "Bcrypt"],
-    // },
-    // {
-    //     title: "Server Manager",
-    //     description: "projects.server_manager.description",
-    //     technologies: ["Vue", "Vuetify", "Laravel", "Eloquent ORM", "PostgreSQL", "JWT"],
-    // },
     {
         title: "Niebo Do Wynajęcia",
         description: "projects.niebodowynajecia.description",
@@ -38,6 +29,18 @@ export const ProjectsData: Project[] = [
         link: "https://localvideoplayer.vercel.app/",
         src: "/gifs/localvideoplayer.gif",
         technologies: ["Vanilla JavaScript", "Large video files support", "FileReader API"],
+    },
+    {
+        title: "FoodTrack",
+        description: "projects.foodtrack.description",
+        technologies: ["Vue", "Vuetify", "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", "Bcrypt"],
+        underConstruction: true,
+    },
+    {
+        title: "Server Manager",
+        description: "projects.server_manager.description",
+        technologies: ["Vue", "Vuetify", "Laravel", "Eloquent ORM", "PostgreSQL", "JWT"],
+        underConstruction: true,
     },
     {
         title: "Porfolio v2",

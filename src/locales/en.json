@@ -15,7 +15,8 @@
   "No_results_found": "No results found",
   "Type_a_command_or_search": "Type a command or search",
   "project": {
-    "link": "Go to the project"
+    "link": "Go to the project",
+    "under_construction": "Under construction"
   },
   "design_enthusiast": {
     "title": "I love design",
@@ -69,7 +70,7 @@
       "payments": "In commercial projects, I integrated payment systems such as Przelewy24, Stripe.",
       "fastapi": "Recent projects allowed me to gain experience in working with FastAPI, which I used for commercial AI projects such as AI Chat.",
       "sql": "Experience in working with databases such as PostgreSQL, MySQL, SQLite, MSSQL. In the ERP class project I used OpenEdge Progress connected via ODBC. In the AI Chat project I used MongoDB.",
-      "mongodb": "Experience in working with MongoDB, which I used in AI projects like AI Chat.",
+      "oe_postgress": "I used OpenEdge Progress in the ERP class project. The procedures were created based on the ABL/4GL language. When creating an API for the project, which was based on the OpenEdge Progress database, communication took place via ODBC.",      "mongodb": "Experience in working with MongoDB, which I used in AI projects like AI Chat.",
       "twilio": "I integrated Twilio in a scale ERP project for sending SMS. Moreover, I integrated a Marketing Automation system like Mautic.",
       "php": "Experience with large legacy code (a dozen-year-old project) that I migrated from version 4.4 to 8.X. In newer projects I used the Laravel framework.",
       "nodejs": "Experience in working with Node.js, which I have used in several commercial projects. Using the zx library, I have rewritten many scripts in projects.",

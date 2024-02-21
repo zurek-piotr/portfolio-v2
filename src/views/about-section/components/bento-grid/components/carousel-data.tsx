@@ -190,6 +190,11 @@ export const BackendData: CarouselElement[] = [
         iconClasses: "text-black",
     },
     {
+        title: "OpenEdge Postgress",
+        body: "about.backend.oe_postgress",
+        imageSrc: "/icons/oe_postgress.svg",
+    },
+    {
         title: "SQL",
         icon: IconSql,
         body: "about.backend.sql",

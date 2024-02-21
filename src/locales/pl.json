@@ -14,7 +14,8 @@
   "No_results_found": "Nie znaleziono wyników",
   "Type_a_command_or_search": "Wprowadź komendę lub wyszukaj",
   "project": {
-    "link": "Link do projektu"
+    "link": "Link do projektu",
+    "under_construction": "W trakcie budowy"
   },
   "design_enthusiast": {
     "title": "Uwielbiam design",
@@ -67,6 +68,7 @@
       "laravel": "Doświadczenie w pracy z Laravel, który wykorzystałem do stworzenia API dla projektu klasy ERP. Skala projektu przyniosła wiele wyzwań, które przekształciły mnie w doświadczonego developera (Ponad 2000 endpointów). W Laravel tworzyłem również ciekawy projekt, integracja z Erasmus Without Network (EWP), który był oparty o rozproszoną sieć API z uwzględnieniem zaawansowanych technologii szyfrowania i transformacji XSL",
       "payments": "W projektach komercyjnych integrowałem systemy płatności, takie jak Przelewy24, Stripe.",
       "fastapi": "Ostatnie projekty pozwoliły mi na zdobycie doświadczenia w pracy z FastAPI, który wykorzystałem do komercyjnych projektów AI jak AI Chat.",
+      "oe_postgress": "W projekcie klasy ERP wykorzystałem OpenEdge Progress. Procedury tworzone były w oparciu o język ABL/4GL. Tworząc API dla projektu, który był oparty o bazę danych OpenEdge Progress, komunikacja odbywała się po ODBC.",
       "sql": "Doświadczenie w pracy z bazami danych, takimi jak PostgreSQL, MySQL, SQLite, MSSQL. W projekcie klasy ERP wykorzystałem OpenEdge Progress połączony po ODBC. W projekcie AI Chat wykorzystałem MongoDB.",
       "mongodb": "Doświadczenie w pracy z MongoDB, które wykorzystałem w projektach AI jak AI Chat.",
       "twilio": "Integrowałem Twilio w projekcie skali ERP do wysyłania SMSów. Ponadto integrowałem system typu Marketing Automation jak Mautic.",

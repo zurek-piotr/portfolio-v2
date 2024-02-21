@@ -2,11 +2,13 @@
 
 import {getTranslation, TranslationsContextProps, useTranslations} from "@/contexts/translations-context";
 import {cn} from "@/lib/utils";
-import {IconBolt, IconBrandOpenai, IconBrandTeams, IconMountain, IconPalette, IconTools} from "@tabler/icons-react";
+import {IconBolt, IconBrandOpenai, IconBrandTeams, IconPalette, IconTools} from "@tabler/icons-react";
 import Face from "@/components/face/face";
 import BentoGridCarousel from "@/views/about-section/components/bento-grid/components/bento-grid-carousel";
 import {BackendData, FrontendData} from "@/views/about-section/components/bento-grid/components/carousel-data";
 import BentoGridFlipCard from "@/views/about-section/components/bento-grid/components/flip-card/bento-grid-flip-card";
+import Image from "next/image";
+import React from "react";
 
 export default function AboutSectionBentoGrid({className}: { className?: string }) {
     const {translations: t}: TranslationsContextProps = useTranslations();
@@ -33,7 +35,7 @@ export default function AboutSectionBentoGrid({className}: { className?: string 
                     "text-5xl sm:text-4xl xl:text-5xl",
                     "flex flex-col justify-center items-center gap-4",
                     "font-bold text-center",
-                    )}
+                )}
                 frontChildren={<>
                     {getTranslation(t, "design_enthusiast.title")}
 
@@ -74,7 +76,7 @@ export default function AboutSectionBentoGrid({className}: { className?: string 
             />
 
             <BentoGridFlipCard
-                rootClassName={cn( "sm:max-lg:col-span-2",)}
+                rootClassName={cn("sm:max-lg:col-span-2")}
                 frontBackClassName={cn("p-4 rounded-xl")}
                 frontClassName={cn(
                     "flex flex-col justify-center items-center gap-4",
@@ -99,7 +101,7 @@ export default function AboutSectionBentoGrid({className}: { className?: string 
             />
 
             <BentoGridFlipCard
-                rootClassName={cn( "sm:col-span-2 sm:max-lg:col-span-3",)}
+                rootClassName={cn("sm:col-span-2 sm:max-lg:col-span-3")}
                 frontBackClassName={cn("p-4 rounded-xl")}
                 frontClassName={cn(
                     "flex flex-col justify-center items-center gap-4",
@@ -121,7 +123,7 @@ export default function AboutSectionBentoGrid({className}: { className?: string 
             />
 
             <BentoGridFlipCard
-                rootClassName={cn( "sm:max-lg:col-span-2")}
+                rootClassName={cn("sm:max-lg:col-span-2")}
                 frontBackClassName={cn("p-4 rounded-xl")}
                 frontClassName={cn(
                     "flex flex-col justify-center items-center gap-1",
@@ -189,7 +191,13 @@ export default function AboutSectionBentoGrid({className}: { className?: string 
                 frontChildren={<>
                     {getTranslation(t, "bouldering_freak.title")}
 
-                    <IconMountain className={"size-32"} stroke={1}/>
+                    <div className={"relative size-32"}>
+                        <Image
+                            src={"/icons/bouldering.svg"}
+                            alt={getTranslation(t, "bouldering_freak.title")}
+                            fill
+                        />
+                    </div>
                 </>}
                 backClassName={cn(
                     "text-justify text-wrap break-words whitespace-pre-line",
