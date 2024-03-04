@@ -12,10 +12,11 @@ import {IconLink} from "@tabler/icons-react";
 import {AspectRatio} from "@/components/ui/aspect-ratio";
 import portfoliov2Gif from "../../../public/gifs/portfoliov2.webp";
 
-export default function ProjectItem({project, fill, sizes, technologies, rootClassName, imageClassName}: {
+export default function ProjectItem({project, fill, sizes, priority, technologies, rootClassName, imageClassName}: {
     project: Project,
     fill: boolean,
     sizes: string,
+    priority: boolean,
     technologies?: string[],
     rootClassName?: string
     imageClassName?: string
@@ -35,7 +36,7 @@ export default function ProjectItem({project, fill, sizes, technologies, rootCla
                         alt={project.title}
                         fill={fill}
                         sizes={sizes}
-                        priority
+                        priority={priority}
                     />
                 </div>
             </AspectRatio>

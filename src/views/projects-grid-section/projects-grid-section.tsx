@@ -23,6 +23,7 @@ export default function ProjectsGridSection({translations, currentLanguage}: {
                             key={index}
                             project={project}
                             fill={true}
+                            priority={ index === 0}
                             sizes={"(max-width: 768px) 100vw, 50vw"}
                             technologies={project.technologies}
                         />

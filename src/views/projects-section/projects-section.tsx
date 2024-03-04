@@ -58,6 +58,7 @@ export default function ProjectsSection({translations, currentLanguage}: {
                                     rootClassName={cn(index === current && "scale-105")}
                                     project={project}
                                     fill={true}
+                                    priority={false}
                                     sizes={"(max-width: 768px) 100vw, 50vw"}
                                     technologies={project.technologies}
                                 />
