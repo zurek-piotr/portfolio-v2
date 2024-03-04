@@ -2,8 +2,10 @@ import {getTranslations} from "@/lib/translations";
 import type {Locale} from "@/i18n.config";
 import {Translations} from "@/contexts/translations-context";
 import Navigation from "@/components/naigation/navigation";
-import FooterSection from "@/views/footer-section/footer-section";
 import ProjectsGridSection from "@/views/projects-grid-section/projects-grid-section";
+import dynamic from "next/dynamic";
+
+const FooterSection = dynamic(() => import('@/views/footer-section/footer-section'))
 
 export default async function Home({params: {lang}}: { params: { lang: Locale } }) {
     const translations: Translations = await getTranslations(lang);

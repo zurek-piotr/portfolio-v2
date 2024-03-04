@@ -1,7 +1,17 @@
+import nieboDoWynajeciaGif from "../../../public/gifs/niebodowynajecia.webp";
+import ipagroGif from "../../../public/gifs/ipagro.webp";
+import localVideoPlayerGif from "../../../public/gifs/localvideoplayer.webp";
+import foodTrackGif from "../../../public/gifs/foodtrack.webp";
+import serverManagerGif from "../../../public/gifs/server_manager.webp";
+import portfoliov2Gif from "../../../public/gifs/portfoliov2.webp";
+import portfoliov1Gif from "../../../public/gifs/portfoliov1.webp";
+
+import {StaticImageData} from "next/image";
+
 export interface Project {
     title: string;
     description?: string;
-    src?: string;
+    src?: StaticImageData;
     link?: string;
     github?: string;
     technologies?: string[];
@@ -13,34 +23,34 @@ export const ProjectsData: Project[] = [
         title: "Niebo Do Wynajęcia",
         description: "projects.niebodowynajecia.description",
         link: "https://niebo-do-wynajecia.pl",
-        src: "/gifs/niebodowynajecia.webp",
+        src: nieboDoWynajeciaGif,
         technologies: ["WordPress", "PHP", "MySQL", "Yoast SEO", "Google Analytics", "Google Search Console", "Google My Buisness"],
     },
     {
         title: "IpAgro",
         description: "projects.ipagro.description",
         link: "https://ipagro.pl",
-        src: "/gifs/ipagro.webp",
+        src: ipagroGif,
         technologies: ["WordPress", "WooCommerce", "PHP", "MySQL", "Yoast SEO", "Google Analytics", "Google Search Console", "Google My Buisness"],
     },
     {
         title: "Local Video Player",
         description: "projects.localvideoplayer.description",
         link: "https://localvideoplayer.vercel.app/",
-        src: "/gifs/localvideoplayer.webp",
+        src: localVideoPlayerGif,
         technologies: ["Vanilla JavaScript", "Large video files support", "FileReader API"],
     },
     {
         title: "FoodTrack",
         description: "projects.foodtrack.description",
-        src: "/gifs/foodtrack.webp",
+        src: foodTrackGif,
         technologies: ["Vue", "Vuetify", "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", "Bcrypt"],
         underConstruction: true,
     },
     {
         title: "IoT Manager",
         description: "projects.server_manager.description",
-        src: "/gifs/server_manager.webp",
+        src: serverManagerGif,
         technologies: ["Vue", "Vuetify", "Laravel", "Eloquent ORM", "PostgreSQL", "JWT"],
         underConstruction: true,
     },
@@ -48,14 +58,14 @@ export const ProjectsData: Project[] = [
         title: "Porfolio v2",
         description: "projects.portfoliov2.description",
         link: "https://zurekpiotr.pl",
-        src: "/gifs/portfoliov2.webp",
+        src: portfoliov2Gif,
         technologies: ["Next.js", "React", "Tailwind", "i18n", "Figma"],
     },
     {
         title: "Porfolio v1",
         description: "projects.portfoliov1.description",
         link: "https://zurekpiotr-portfolio-v1.vercel.app",
-        src: "/gifs/portfoliov1.webp",
+        src: portfoliov1Gif,
         technologies: ["Vue", "Vuelidate", "SCSS", "Figma", "i18n", "Google Apps Mail"],
     },
 ];

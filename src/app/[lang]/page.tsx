@@ -2,10 +2,13 @@ import HeroSection from "@/views/hero-section/hero-section";
 import {getTranslations} from "@/lib/translations";
 import type {Locale} from "@/i18n.config";
 import {Translations} from "@/contexts/translations-context";
-import AboutSection from "@/views/about-section/about-section";
 import Navigation from "@/components/naigation/navigation";
-import ProjectsSection from "@/views/projects-section/projects-section";
-import FooterSection from "@/views/footer-section/footer-section";
+import dynamic from "next/dynamic";
+
+const AboutSection = dynamic(() => import('@/views/about-section/about-section'))
+const ProjectsSection = dynamic(() => import('@/views/projects-section/projects-section'))
+const FooterSection = dynamic(() => import('@/views/footer-section/footer-section'))
+
 
 export default async function Home({params: {lang}}: { params: { lang: Locale } }) {
     const translations: Translations = await getTranslations(lang);

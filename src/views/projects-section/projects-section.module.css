@@ -1,0 +1,15 @@
+@keyframes handScroll {
+    0% {
+        transform: translateY(0) rotate(-45deg);
+    }
+    50% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(0) rotate(30deg);
+    }
+}
+
+.handIcon {
+    animation: handScroll 1s infinite alternate;
+}
