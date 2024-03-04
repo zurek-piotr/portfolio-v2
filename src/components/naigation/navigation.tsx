@@ -12,7 +12,9 @@ import {HireMeButton} from "@/components/hire-me-button/hire-me-button";
 import {CommandMenu} from "@/components/command-menu";
 import Link from "next/link";
 import {IsOpenChatProvider} from "@/contexts/is-open-chat-context";
-import {Chat} from "@/components/chat/chat";
+import dynamic from "next/dynamic";
+
+const Chat = dynamic(() => import('@/components/chat/chat'))
 
 export default function Navigation({translations, currentLanguage}: {
     translations: Translations,

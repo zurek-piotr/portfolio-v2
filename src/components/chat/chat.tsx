@@ -17,7 +17,7 @@ export interface ChatMessage {
     action?: () => void
 }
 
-export function Chat() {
+export default function Chat() {
     const {translations: t, currentLanguage} = useTranslations();
     const {push} = useRouter();
     const delay: number = 600;
